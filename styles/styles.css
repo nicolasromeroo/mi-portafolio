@@ -345,14 +345,17 @@ section {
 }
 
 .containerImagesStack {
+    gap: 20px;
     width: 300px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 30px;
 }
 
 .containerImagesStack img {
-    width: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 .home-image {
@@ -696,7 +699,7 @@ path {
     text-align: center;
 }
 
-.fillter-buttons .btn {
+.fillter-buttons .btn-ptf {
     background: none;
     outline: none;
     border: none;
@@ -708,7 +711,7 @@ path {
     color: var(--text-color);
 }
 
-.fillter-buttons .btn:hover {
+.fillter-buttons .btn-ptf:hover {
     color: var(--hover-color);
 }
 
@@ -744,8 +747,9 @@ path {
 .port-image img {
     width: 100%;
     opacity: .5s;
-    height: 100%;
+    height: 220px;
     transition: .5s;
+    object-fit: cover;
 }
 
 .port-content {
@@ -1089,6 +1093,10 @@ footer a i {
         font-size: 80%;
     }
 
+    .stackContainer {
+        display: none;
+    }
+
     footer p {
         font-size: .6rem;
     }
@@ -1107,6 +1115,10 @@ footer a i {
 
     .img-about p {
         font-size: 1rem;
+    }
+
+    .portfolio .port-box {
+        width: 40vh;
     }
 }
 
