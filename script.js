@@ -1,4 +1,92 @@
 
+// sección PORTAFOLI
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+    card.addEventListener('click', (e) => {
+        e.stopPropagation(); // Evita que el click se propague a otros elementos
+
+        // Cierra todas las demás descripciones
+        cards.forEach(otherCard => {
+            if (otherCard !== card) {
+                otherCard.querySelector('.description').classList.add('hidden');
+                otherCard.classList.remove('z-50');
+            }
+        });
+
+        // Toggle (mostrar/ocultar) la descripción del clic actual
+        const description = card.querySelector('.description');
+        description.classList.toggle('hidden');
+        card.classList.toggle('z-50');
+    });
+});
+
+
+// Opcional: Si quieres que al hacer click fuera de las tarjetas, se cierren todas
+document.addEventListener('click', () => {
+    cards.forEach(card => {
+        card.querySelector('.description').classList.add('hidden');
+    });
+});
+
+
+//
+
+const sections = document.querySelectorAll('section');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('section-visible');
+            entry.target.classList.remove('section-hidden');
+            observer.unobserve(entry.target); // dispara solo una vez
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+sections.forEach(section => {
+    observer.observe(section);
+});
+
+
+// INTRO
+
+AOS.init();
+
+// typed = new Typed('#typed-text', {
+//     strings: [
+//         'Diseñador Web',
+//         'Desarrollador Frontend',
+//         'Community Manager',
+//         'Encargado de depósito',
+//         'Bartender',
+//         'Futbolista'
+//     ],
+//     typeSpeed: 50,
+//     backSpeed: 25,
+//     backDelay: 1500,
+//     loop: true
+// });
+
+// estilos tailwind
+var typed = new Typed("#typed-text", {
+    strings: [
+        'desarrollador Full Stack',
+        'desarrollador web',
+    ],
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 1500,
+    loop: true
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    lucide.createIcons();
+});
+
+// ------------
 
 let words = document.querySelectorAll(".word")
 
@@ -19,32 +107,32 @@ let currentWordIndex = 0
 
 let maxWordIndex = words.length - 1
 
-words[currentWordIndex].style.opacity = "1"
+// words[currentWordIndex].style.opacity = "1"
 
 
-let changeText = () => {
-    let currentWord = words[currentWordIndex]
-    let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1]
+// let changeText = () => {
+//     let currentWord = words[currentWordIndex]
+//     let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1]
 
-    Array.from(currentWord.children).forEach((letter, i) => {
-        setTimeout(() => {
-            letter.className = "letter out"
-        }, i * 80)
-    })
+//     Array.from(currentWord.children).forEach((letter, i) => {
+//         setTimeout(() => {
+//             letter.className = "letter out"
+//         }, i * 80)
+//     })
 
-    nextWord.style.opacity = "1"
-    Array.from(nextWord.children).forEach((letter, i) => {
-        letter.className = "letter behind"
-        setTimeout(() => {
-            letter.className = "letter in"
-        }, 340 + i * 80)
-    })
+//     nextWord.style.opacity = "1"
+//     Array.from(nextWord.children).forEach((letter, i) => {
+//         letter.className = "letter behind"
+//         setTimeout(() => {
+//             letter.className = "letter in"
+//         }, 340 + i * 80)
+//     })
 
-    currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1
-}
+//     currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1
+// }
 
-changeText()
-setInterval(changeText, 3000)
+// changeText()
+// setInterval(changeText, 3000)
 
 // circle skill
 
@@ -69,7 +157,7 @@ circles.forEach(elem => {
 
 // mix it up 
 
-var mixer = mixitup('.portfolio-gallery')
+// var mixer = mixitup('.portfolio-gallery')
 
 // active menu
 let menuLi = document.querySelectorAll('header ul li a')
@@ -106,29 +194,29 @@ window.onscroll = () => {
     navlist.classList.remove("open")
 }
 
-// typed
-const typed = new Typed('#element', {
-    strings: ['MI STACK PRINCIPAL'],
-    typeSpeed: 85,
-});
+// // typed
+// const typed = new Typed('#element', {
+//     strings: ['MI STACK PRINCIPAL'],
+//     typeSpeed: 85,
+// });
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show-items")
-        } else {
-            entry.target.classList.remove("show-items")
-        }
-    })
-})
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add("show-items")
+//         } else {
+//             entry.target.classList.remove("show-items")
+//         }
+//     })
+// })
 
-const scrollScale = document.querySelectorAll(".scroll-scale")
-scrollScale.forEach((el) => observer.observe(el))
+// const scrollScale = document.querySelectorAll(".scroll-scale")
+// scrollScale.forEach((el) => observer.observe(el))
 
-const scrollBottom = document.querySelectorAll(".scroll-bottom")
-scrollScale.forEach((el) => observer.observe(el))
+// const scrollBottom = document.querySelectorAll(".scroll-bottom")
+// scrollScale.forEach((el) => observer.observe(el))
 
-const scrollTop = document.querySelectorAll(".scroll-top")
-scrollScale.forEach((el) => observer.observe(el))
+// const scrollTop = document.querySelectorAll(".scroll-top")
+// scrollScale.forEach((el) => observer.observe(el))
 
 

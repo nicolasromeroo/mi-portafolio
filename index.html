@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="styles/styles.css">
     <title>Mi Portafolio</title>
 </head>
@@ -22,481 +23,717 @@
         </ul>
         <div id="menu-icon" class="bx bx-menu"></div>
     </header>
-
-    <section id="inicio" class="inicio">
-        <div class="home-content scroll-scale">
-            <h1>Hola, mi nombre es Nicolás Romero</h1>
-            <div class="change-text">
-                <h3>y soy</h3>
-                <h3>
-                    <span class="word">Diseñador&nbsp;Web</span>
-                    <span class="word">Desarrollador&nbsp;Frontend</span>
-                    <span class="word">Community&nbsp;Manager</span>
-                    <span class="word">Encargado&nbsp;de&nbsp;depósito</span>
-                    <span class="word">Bartender</span>
-                    <span class="word">Futbolista</span>
-                </h3>
-            </div>
-
-            <p></p>
-
-            <div class="info-box">
-                <div class="email-info">
-                    <h5>Email: </h5>
-                    <span>nicolasdev290300@gmail.com</span>
+    <section id="inicio" class="min-h-screen flex flex-col justify-center items-center px-6 text-white">
+        <div class="max-w-6xl w-full text-center" data-aos="fade-up">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <!-- FOTO -->
+                <div class="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-teal-400 shadow-xl transform hover:scale-105 transition-all duration-300"
+                    data-aos="fade-right">
+                    <img src="img/yo3.jpeg" alt="Nicolás Romero" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-teal-400 opacity-10 hover:opacity-0 transition duration-300"></div>
                 </div>
-                <div class="github-info">
-                    <h5>GitHub: </h5>
-                    <span>github.com/nicolasromeroo</span>
+
+                <!-- TEXTO PRINCIPAL -->
+                <div class="md:text-left text-center" data-aos="fade-left">
+                    <div class="md:text-left text-center text-teal-400" data-aos="fade-left">
+                        <h1 class="neon-teal text-4xl sm:text-5xl font-extrabold mb-4 animate-pulse text-teal-300">
+                            H<span class="text-white text-shadow-lg flicker-once text-teal-400 smoke-effect">o</span>la,
+                            so<span class="text-white text-shadow-lg flicker-slow text-teal-400">y</span>
+                            <span class="text-teal-300 neon-teal">Nicolás <span
+                                    class="text-teal-50 hanging-letter">R</span>omero</span>
+
+                        </h1>
+
+                        <h3 class="neon-teal text-white text-2xl sm:text-3xl font-semibold mb-6 text-teal-300">
+                            y soy <span id="typed-text" class="text-teal-300"></span>
+                        </h3>
+                    </div>
+
+
+                    <div class="space-y-2 mb-6">
+                        <p>Email:
+                            <a href="mailto:nicolasdev290300@gmail.com"
+                                class="text-teal-400 hover:underline hover:text-teal-300 transition">nicolasdev290300@gmail.com</a>
+                        </p>
+                        <p>GitHub:
+                            <a href="https://github.com/nicolasromeroo" target="_blank"
+                                class="text-teal-400 hover:underline hover:text-teal-300 transition">github.com/nicolasromeroo</a>
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-6">
+                        <a href="cv/romeroNicolasE.docx" download
+                            class="electric-button bg-teal-500 hover:bg-teal-400 text-white px-6 py-2 rounded-full shadow-2xl hover:shadow-xl transition transform hover:scale-105">
+                            Descargar CV
+                        </a>
+                        <a href="#main-text-contact"
+                            class="border border-teal-500 hover:bg-teal-500 text-teal-400 hover:text-white px-6 py-2 rounded-full shadow-2xl hover:shadow-xl transition transform hover:scale-105">
+                            Contáctame
+                        </a>
+                    </div>
+
+                    <div class="flex justify-center md:justify-start gap-6 text-3xl mb-6">
+                        <a href="https://www.instagram.com/nicoromeroooo/" target="_blank"
+                            class="hover:text-pink-500 transition transform hover:scale-125">
+                            <i class='bx bxl-instagram icon-electric'></i>
+                        </a>
+                        <a href="https://github.com/nicolasromeroo" target="_blank"
+                            class="hover:text-gray-300 transition transform hover:scale-125">
+                            <i class='bx bxl-github icon-electric'></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nicolas-romero-7465572b1/" target="_blank"
+                            class="hover:text-blue-500 transition transform hover:scale-125">
+                            <i class='bx bxl-linkedin-square icon-electric'></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="btn-box">
-                <a href="cv/romeroNicolasE.docx" download="romeroNicolas.docx" class="btn">Descargar CV</a>
-                <a href="#main-text-contact" class="btn">Contactame</a>
-            </div>
-
-            <div class="social-icons">
-                <a href="https://www.instagram.com/nicoromeroooo/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                <a href="https://github.com/nicolasromeroo" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/nicolas-romero-7465572b1/" target="_blank"><i
-                        class='bx bxl-linkedin-square'></i></a>
+            <!-- STACK DE TECNOLOGÍAS -->
+            <div class="mt-10 flex flex-wrap justify-center gap-6" data-aos="zoom-in">
+                <img src="img/mongodb.png" class="h-12 transform hover:scale-110 transition duration-300 shadow-xl">
+                <img src="img/express.png"
+                    class="h-12 transform hover:scale-110 transition duration-300 shadow-xl icon-electric">
+                <img src="img/react.png" class="h-12 transform hover:scale-110 transition duration-300 shadow-xl">
+                <img src="img/node.png" class="h-12 transform hover:scale-110 transition duration-300 shadow-xl">
             </div>
         </div>
-
-        <div class="home-image scroll-scale">
-            <div id="element"></div>
-            <section class="stackContainer">
-                <div class="containerImagesStack">
-                    <img src="img/mongodb.png">
-                    <img src="img/express.png">
-                    <img src="img/react.png">
-                    <img style="width: 70px;" src="img/node.png">
-                </div>
-            </section>
-
-            <div class="img-box">
-                <img src="img/yo3.png" alt="nicolas">
-            </div>
-
-
-            <div class="liquid-shape">
-                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="100%" id="blobSvg">
-                    <path fill="#12f7ff">
-                        <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="
-                            
-                            M412.5,295Q405,340,389.5,402Q374,464,312,461Q250,458,197,445.5Q144,433,120,386Q96,339,60.5,294.5Q25,250,66.5,209Q108,168,131,126Q154,84,202,90Q250,96,293.5,98Q337,100,365,134Q393,168,406.5,209Q420,250,412.5,295Z;
-                            
-                            M459,310.5Q460,371,409,404Q358,437,304,446.5Q250,456,206.5,428Q163,400,137,365Q111,330,62,290Q13,250,44,199.5Q75,149,100,91.5Q125,34,187.5,38Q250,42,295.5,67.5Q341,93,386.5,119Q432,145,445,197.5Q458,250,459,310.5Z;
-
-                            M416,301Q427,352,386,383.5Q345,415,297.5,409.5Q250,404,197.5,418.5Q145,433,104.5,395Q64,357,53,303.5Q42,250,69,205.5Q96,161,126,124.5Q156,88,203,53.5Q250,19,292,61.5Q334,104,387.5,122Q441,140,423,195Q405,250,416,301Z;
-
-                            M447.62893,292.51419Q396.1425,335.02838,361.314,358.04257Q326.4855,381.05675,288.24275,461.95774Q250,542.85873,188.24275,502.58668Q126.4855,462.31462,106.04287,403.48581Q85.60025,344.657,73.05737,297.3285Q60.5145,250,74.40006,203.18569Q88.28563,156.37138,112.11413,104.44263Q135.94263,52.51388,192.97131,33.44263Q250,14.37138,320.54318,9.81369Q391.08637,5.25601,382.09994,91.91394Q373.11351,178.57187,436.11444,214.28593Q499.11536,250,447.62893,292.51419Z;
-
-                            M468.44509,313.67565Q470.89017,377.35131,416.2653,410.51141Q361.64042,443.67152,305.82021,422.57046Q250,401.4694,202.51555,407.45749Q155.03109,413.44558,94.48445,393.89067Q33.93781,374.33576,46.17201,312.16788Q58.40622,250,60.93368,196.28912Q63.46113,142.57823,105.43368,107.64456Q147.40622,72.71088,198.70311,36.64456Q250,0.57823,304.44145,31.30466Q358.8829,62.03109,369.67979,118.47254Q380.47668,174.91399,423.23834,212.457Q466,250,468.44509,313.67565Z;
-
-                            M469.5,312Q465,374,414,410Q363,446,306.5,439.5Q250,433,198,431.5Q146,430,91.5,401.5Q37,373,40,311.5Q43,250,50.5,194.5Q58,139,100,100.5Q142,62,196,32Q250,2,307,27.5Q364,53,383.5,107.5Q403,162,438.5,206Q474,250,469.5,312Z;
-                            
-                            "></animate>
-                    </path>
-                </svg>
-            </div>
-
-            <div class="liquid-shape">
-                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="100%" id="blobSvg">
-                    <path fill="#12f7ff">
-                        <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="
-                            
-                            M412.5,295Q405,340,389.5,402Q374,464,312,461Q250,458,197,445.5Q144,433,120,386Q96,339,60.5,294.5Q25,250,66.5,209Q108,168,131,126Q154,84,202,90Q250,96,293.5,98Q337,100,365,134Q393,168,406.5,209Q420,250,412.5,295Z;
-                            
-                            M459,310.5Q460,371,409,404Q358,437,304,446.5Q250,456,206.5,428Q163,400,137,365Q111,330,62,290Q13,250,44,199.5Q75,149,100,91.5Q125,34,187.5,38Q250,42,295.5,67.5Q341,93,386.5,119Q432,145,445,197.5Q458,250,459,310.5Z;
-
-                            M416,301Q427,352,386,383.5Q345,415,297.5,409.5Q250,404,197.5,418.5Q145,433,104.5,395Q64,357,53,303.5Q42,250,69,205.5Q96,161,126,124.5Q156,88,203,53.5Q250,19,292,61.5Q334,104,387.5,122Q441,140,423,195Q405,250,416,301Z;
-
-                            M447.62893,292.51419Q396.1425,335.02838,361.314,358.04257Q326.4855,381.05675,288.24275,461.95774Q250,542.85873,188.24275,502.58668Q126.4855,462.31462,106.04287,403.48581Q85.60025,344.657,73.05737,297.3285Q60.5145,250,74.40006,203.18569Q88.28563,156.37138,112.11413,104.44263Q135.94263,52.51388,192.97131,33.44263Q250,14.37138,320.54318,9.81369Q391.08637,5.25601,382.09994,91.91394Q373.11351,178.57187,436.11444,214.28593Q499.11536,250,447.62893,292.51419Z;
-
-                            M468.44509,313.67565Q470.89017,377.35131,416.2653,410.51141Q361.64042,443.67152,305.82021,422.57046Q250,401.4694,202.51555,407.45749Q155.03109,413.44558,94.48445,393.89067Q33.93781,374.33576,46.17201,312.16788Q58.40622,250,60.93368,196.28912Q63.46113,142.57823,105.43368,107.64456Q147.40622,72.71088,198.70311,36.64456Q250,0.57823,304.44145,31.30466Q358.8829,62.03109,369.67979,118.47254Q380.47668,174.91399,423.23834,212.457Q466,250,468.44509,313.67565Z;
-
-                            M469.5,312Q465,374,414,410Q363,446,306.5,439.5Q250,433,198,431.5Q146,430,91.5,401.5Q37,373,40,311.5Q43,250,50.5,194.5Q58,139,100,100.5Q142,62,196,32Q250,2,307,27.5Q364,53,383.5,107.5Q403,162,438.5,206Q474,250,469.5,312Z;
-                            
-                            "></animate>
-                    </path>
-                </svg>
-            </div>
-        </div>
-
     </section>
 
-    <section id="about" class="about">
-        <div class="img-about scroll-scale">
-            <img src="img/yo.jpg" alt="Nicolas Romero">
-            <div class="info-about1">
-                <span>+ 10</span>
-                <p>Proyectos en crecimiento.</p>
-            </div>
-            <div class="info-about2">
-                <span>+ 23</span>
-                <p>Proyectos completos.</p>
-            </div>
-            <div class="info-about3">
-                <span>+ 10</span>
-                <p>Clientes en el último año.</p>
-            </div>
-        </div>
 
-        <div class="about-content scroll-scale">
-            <span>Introducción</span>
-            <h2>Sobre mi</h2>
-            <h3>Experiencia extra</h3>
-            <p>
-                - Atención al cliente de servicio técnico en Protection One. <br>
-                - Encargado y jefe de barra en centros de gastronomía. <br>
-                - Encargado, referente de depósito, y supervisor en 'Vanguardia M&S cadena de supermercados'. <br>
+    <section id="services" class="py-20 bg-gray-900 text-white" data-aos="slide-right">
+        <div class="text-center mb-16">
+            <span class="text-teal-400 font-semibold uppercase tracking-widest">¿En qué puedo ayudarte?</span>
+            <h2
+                class="text-4xl md:text-5xl font-extrabold mt-3 bg-gradient-to-r from-teal-400 to-cyan-500 text-transparent bg-clip-text">
+                Servicios Profesionales para Impulsar Tu Proyecto
+            </h2>
+            <p class="mt-6 text-gray-300 max-w-2xl mx-auto text-lg">
+                Diseño y desarrollo soluciones digitales a medida que impulsan tu negocio al siguiente nivel.
             </p>
+        </div>
 
-            <div class="btn-box">
-                <a href="cv/romeroNicolas.docx" target="_blank" class="btn">Leer más</a>
+        <section id="skills" class="py-16 text-white " data-aos="fade-up">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <span class="text-indigo-400 uppercase tracking-widest text-sm">¿En qué me destaco?</span>
+                    <h2 class="text-4xl font-bold mt-2 mb-4">Mis habilidades</h2>
+                    <span id="typed-text" class="text-indigo-300 text-lg"></span>
+                </div>
+
+                <div
+                    class="bg-gray-800 rounded-3xl shadow-lg p-8 transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl border border-teal-500 relative overflow-hidden">
+                    <div class="flex items-center justify-center mb-5">
+                        <div
+                            class="w-20 h-20 rounded-full bg-teal-700 flex items-center justify-center transform transition duration-500 hover:rotate-12">
+                            <i data-lucide="monitor" class="w-10 h-10 text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center text-teal-300 mb-4">Full Stack Development</h3>
+
+                    <p class="text-gray-300 text-center text-base leading-relaxed mb-4">
+                        Transformo ideas en experiencias interactivas, creando interfaces modernas, responsivas y
+                        optimizadas.
+                    </p>
+
+                    <div class="mt-4">
+                        <h4 class="text-teal-400 font-semibold text-sm mb-2">Stack que manejo:</h4>
+                        <div class="mt-4">
+                            <div class="flex flex-wrap gap-2 justify-center">
+                                <div
+                                    class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
+                                    <h3 class="text-xl font-semibold text-indigo-700 mb-4">Frontend</h3>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                                class="w-4 h-4">
+                                            HTML
+                                        </span>
+                                        <span
+                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                            <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
+                                                class="w-4 h-4">
+                                            CSS
+                                        </span>
+                                        <span
+                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                            <img src="https://cdn.simpleicons.org/sass/CC6699" alt="SASS"
+                                                class="w-4 h-4">
+                                            SASS
+                                        </span>
+                                        <span
+                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                            <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap"
+                                                class="w-4 h-4">
+                                            Bootstrap
+                                        </span>
+                                        <span
+                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                            <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind"
+                                                class="w-4 h-4">
+                                            Tailwind
+                                        </span>
+                                        <span
+                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                            <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
+                                                class="w-4 h-4">
+                                            JavaScript
+                                        </span>
+                                        <span
+                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                            <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
+                                                class="w-4 h-4">
+                                            React
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-5">
+                        <div
+                            class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
+                            <h3 class="text-xl font-semibold text-indigo-700 mb-4">Backend</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                        alt="Node.js" class="w-4 h-4"> Node.js
+                                </span>
+                                <span
+                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                        alt="Docker" class="w-4 h-4"> Docker
+                                </span>
+                                <span
+                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+                                        alt="Kubernetes" class="w-4 h-4"> Kubernetes
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Frameworks -->
+                        <div
+                            class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
+                            <h3 class="text-xl font-semibold text-indigo-700 mb-4">Frameworks</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                        alt="Express" class="w-4 h-4"> Express
+                                </span>
+                                <span
+                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg"
+                                        alt="NestJS" class="w-4 h-4"> NestJS
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Bases de datos -->
+                        <div
+                            class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
+                            <h3 class="text-xl font-semibold text-indigo-700 mb-4">Bases de datos</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                    <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" class="w-4 h-4">
+                                    MongoDB
+                                </span>
+                                <span
+                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                    <img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firestore"
+                                        class="w-4 h-4">
+                                    Firestore
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Control de versiones -->
+                        <div
+                            class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
+                            <h3 class="text-xl font-semibold text-indigo-700 mb-4">Control de versiones</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                    <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" class="w-4 h-4"> Git
+                                </span>
+                                <span
+                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                    <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" class="w-4 h-4">
+                                    GitHub
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Testing -->
+                        <div
+                            class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
+                            <h3 class="text-xl font-semibold text-indigo-700 mb-4">Testing</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                    <img src="https://cdn.simpleicons.org/jest/C21325" alt="Supertest" class="w-4 h-4">
+                                    Supertest
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Autenticación -->
+                        <div
+                            class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
+                            <h3 class="text-xl font-semibold text-indigo-700 mb-4">Autenticación<h3>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
+                                            <img src="https://cdn.simpleicons.org/jsonwebtokens/000000" alt="JWT"
+                                                class="w-4 h-4">
+                                            JWT
+                                        </span>
+                                    </div>
+                        </div>
+
+                    </div>
+                    <section class="py-16 text-white" data-aos="fade-up">
+                        <div class="container mx-auto px-6">
+                            <div
+                                class="bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-3xl shadow-2xl p-10 hover:shadow-indigo-500/50 transition duration-500 transform hover:-translate-y-2">
+                                <h3
+                                    class="text-4xl font-extrabold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-green-400 to-cyan-400 animate-pulse">
+                                    Perfil Profesional
+                                </h3>
+                                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <li
+                                        class="flex items-center p-4 bg-gray-700 bg-opacity-50 rounded-xl hover:bg-gray-600 transition">
+                                        <span class="w-4 h-4 bg-green-400 rounded-full mr-4 animate-ping"></span>
+                                        <div>
+                                            <p class="text-lg font-semibold">Trabajo en equipo</p>
+                                            <p class="text-sm text-gray-400">Avanzado</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="flex items-center p-4 bg-gray-700 bg-opacity-50 rounded-xl hover:bg-gray-600 transition">
+                                        <span class="w-4 h-4 bg-green-400 rounded-full mr-4 animate-ping"></span>
+                                        <div>
+                                            <p class="text-lg font-semibold">Creatividad</p>
+                                            <p class="text-sm text-gray-400">Avanzado</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="flex items-center p-4 bg-gray-700 bg-opacity-50 rounded-xl hover:bg-gray-600 transition">
+                                        <span class="w-4 h-4 bg-green-400 rounded-full mr-4 animate-ping"></span>
+                                        <div>
+                                            <p class="text-lg font-semibold">Gestión de proyectos</p>
+                                            <p class="text-sm text-gray-400">Intermedio - Avanzado</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="flex items-center p-4 bg-gray-700 bg-opacity-50 rounded-xl hover:bg-gray-600 transition">
+                                        <span class="w-4 h-4 bg-green-400 rounded-full mr-4 animate-ping"></span>
+                                        <div>
+                                            <p class="text-lg font-semibold">Capacidad analítica</p>
+                                            <p class="text-sm text-gray-400">Avanzado</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="mt-4 text-center">
+                        <p class="text-sm text-gray-400 italic mb-2">+10 proyectos realizados (ecommerce, portfolios,
+                            sistemas)
+                        </p>
+                    </div>
+
+                    <div class="text-center mt-6">
+                        <a href="#portafolio"
+                            class="inline-block px-6 py-2 bg-gradient-to-r from-teal-400 to-cyan-500 text-white font-semibold rounded-full shadow-lg transform transition hover:scale-105 text-sm">
+                            Ver proyectos 🚀
+                        </a>
+                    </div>
+                </div>
+
             </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 px-6 md:px-20">
+            <div
+                class="bg-gray-800 rounded-3xl shadow-lg p-8 transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-105 border border-teal-500">
+                <div class="flex items-center justify-center mb-5">
+                    <div
+                        class="w-20 h-20 rounded-full bg-teal-700 flex items-center justify-center transform transition duration-500 hover:rotate-12">
+                        <i data-lucide="database" class="w-10 h-10 text-white"></i>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-center text-teal-300 mb-4">Bases de Datos</h3>
+                <p class="text-gray-300 text-center text-base leading-relaxed mb-4">
+                    Diseño, integración y optimización de bases de datos relacionales y NoSQL para un manejo seguro y
+                    eficiente.
+                </p>
+                <ul class="text-gray-400 text-sm list-disc list-inside mb-2">
+                    <li>MongoDB, Firestore</li>
+                    <li>Optimización de consultas</li>
+                    <li>Seguridad y respaldos</li>
+                </ul>
+            </div>
+
+            <div
+                class="bg-gray-800 rounded-3xl shadow-lg p-8 transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-105 border border-teal-500">
+                <div class="flex items-center justify-center mb-5">
+                    <div
+                        class="w-20 h-20 rounded-full bg-teal-700 flex items-center justify-center transform transition duration-500 hover:rotate-12">
+                        <i data-lucide="code" class="w-10 h-10 text-white"></i>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-center text-teal-300 mb-4">Desarrollo Web</h3>
+                <p class="text-gray-300 text-center text-base leading-relaxed mb-4">
+                    Construcción de aplicaciones web dinámicas y responsivas usando frameworks modernos, con foco en
+                    rendimiento y escalabilidad.
+                </p>
+                <ul class="text-gray-400 text-sm list-disc list-inside mb-2">
+                    <li>React, Node, NestJS</li>
+                    <li>APIs REST</li>
+                    <li>Integración con servicios externos</li>
+                </ul>
+            </div>
+
+            <div
+                class="bg-gray-800 rounded-3xl shadow-lg p-8 transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-105 border border-teal-500">
+                <div class="flex items-center justify-center mb-5">
+                    <div
+                        class="w-20 h-20 rounded-full bg-teal-700 flex items-center justify-center transform transition duration-500 hover:rotate-12">
+                        <i data-lucide="palette" class="w-10 h-10 text-white"></i>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-center text-teal-300 mb-4">Diseño UI/UX</h3>
+                <p class="text-gray-300 text-center text-base leading-relaxed mb-4">
+                    Creación de interfaces visuales intuitivas, atractivas y centradas en la experiencia del usuario
+                    para potenciar tu producto.
+                </p>
+                <ul class="text-gray-400 text-sm list-disc list-inside mb-2">
+                    <li>Wireframes y prototipos</li>
+                    <li>Diseño responsivo</li>
+                    <li>Pruebas de usabilidad</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="#contact"
+                class="inline-block px-8 py-4 bg-gradient-to-r from-teal-400 to-cyan-500 text-white font-semibold rounded-full shadow-lg transform transition hover:scale-105">
+                Contáctame para empezar tu proyecto 🚀
+            </a>
         </div>
     </section>
 
-    <!---->
-    <section id="services" class="services">
-        <div class="main-text scroll-scale">
-            <span>¿En qué puedo ayudarte?</span>
-            <h2>Te muestro algunos de los servicios que puedo ofrecerte.</h2>
-        </div>
 
-        <dis class="section-services scroll-scale">
-            <div class="service-box">
-                <i class='bx bxs-layer service-icon'></i>
-                <h3>Base de datos</h3>
-                <p>Colección organizada y estructurada de información, y de fácil acceso.</p>
-                <div class="btn-box service-btn">
-                    <a href="https://github.com/nicolasromeroo" class="btn">Leer más</a>
-                </div>
-            </div>
 
-            <div class="service-box">
-                <i class='bx bx-code-alt service-icon'></i>
-                <h3>Estructura interna</h3>
-                <p>SEO de la página web, selección de la paleta de colores y tipografías acorde a lo solicitado,
-                    mediante diferentes tecnologias.</p>
-                <div class="btn-box service-btn">
-                    <a href="https://github.com/nicolasromeroo" class="btn">Leer más</a>
-                </div>
-            </div>
 
-            <div class="service-box">
-                <i class='bx bx-desktop service-icon'></i>
-                <h3>Diseño</h3>
-                <p>Sitio web funcional e informativo sobre el objetivo de la empresa, y de los distintos servicios que
-                    brinda a sus clientes.</p>
-                <div class="btn-box service-btn">
-                    <a href="https://github.com/nicolasromeroo" class="btn">Leer más</a>
-                </div>
-            </div>
-        </dis>
-    </section>
+
 
     <!---->
-    <section id="skills" class="skills">
-        <div class="main-text scroll-scale">
-            <span>¿En qué me destaco?</span>
-            <h2>Mis habilidades</h2>
-        </div>
-        <div class="skill-main">
-            <div class="skill-left scroll-scale">
-                <h3>Tecnologías y lenguajes</h3>
-
-                <div class="skill-bar">
-                    <div class="info">
-                        <p>HTML, CSS, BOOTSTRAP</p>
-                        <p>100%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="html"></span>
-                    </div>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="info">
-                        <p>JAVASCRIPT</p>
-                        <p>100%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="html"></span>
-                    </div>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="info">
-                        <p>REACT</p>
-                        <p>95%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="css"></span>
-                    </div>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="info">
-                        <p>NODE</p>
-                        <p>90%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="javascript"></span>
-                    </div>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="info">
-                        <p>PYTHON</p>
-                        <p>85%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="react"></span>
-                    </div>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="info">
-                        <p>GIT & GITHUB</p>
-                        <p>100%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="git"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-right scroll-scale">
-                <h3>Perfil profesional</h3>
-                <div class="professional">
-                    <div class="box">
-                        <div class="circle" data-dots="30" data-percent="90"></div>
-                        <div class="text">
-                            <big>80%</big>
-                            <small>Trabajo en equipo</small>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="circle" data-dots="30" data-percent="90"></div>
-
-                        <div class="text">
-                            <big>90%</big>
-                            <small>Creatividad</small>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="circle" data-dots="50" data-percent="90"></div>
-
-                        <div class="text">
-                            <big>90%</big>
-                            <small>Gestión de proyectos</small>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="circle" data-dots="50" data-percent="90"></div>
-
-                        <div class="text">
-                            <big>80%</big>
-                            <small>Capacidad analítica</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!---->
-    <section id="portafolio" class="portfolio">
-        <div class="main-text scroll-scale">
-            <span>Mi trabajo</span>
-            <h2>Últimos proyectos</h2>
+    <section id="portafolio" class="py-16 bg-black text-white" data-aos="fade-up">
+        <div class="text-center mb-12">
+            <span class="uppercase text-sm tracking-widest text-green-400">Mi trabajo</span>
+            <h2
+                class="text-4xl font-bold bg-gradient-to-r from-indigo-400 via-green-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
+                Últimos proyectos
+            </h2>
         </div>
 
-        <div class="container">
-            <div class="fillter-buttons scroll-scale">
-                <button class="btn-ptf" data-filter=".todo">Todo</button>
-                <button class="btn-ptf" data-filter=".destacados">Destacados</button>
-                <button class="btn-ptf" data-filter=".react">React</button>
-                <button class="btn-ptf" data-filter=".node">Node</button>
-                <button class="btn-ptf" data-filter=".python">Python</button>
-                <button class="btn-ptf" data-filter=".csssass">CSS & SASS</button>
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center mb-8 space-x-4">
+                <button class="px-4 py-2 bg-gray-800 rounded-full hover:bg-green-500 transition">Todo</button>
+                <button class="px-4 py-2 bg-gray-800 rounded-full hover:bg-green-500 transition">Destacados</button>
+                <button class="px-4 py-2 bg-gray-800 rounded-full hover:bg-green-500 transition">React</button>
+                <button class="px-4 py-2 bg-gray-800 rounded-full hover:bg-green-500 transition">Node</button>
+                <button class="px-4 py-2 bg-gray-800 rounded-full hover:bg-green-500 transition">CSS & SASS</button>
             </div>
 
-            <div class="portfolio-gallery scroll-bottom">
-                <div class="port-box mix todo">
-                    <div class="port-image">
-                        <img src="img/alimentar-.png" alt="Alimentar">
+
+
+            <div class="container mx-auto px-6">
+                <div class="relative flex space-x-[-100px]">
+                    <div
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/alimentar-.png" alt="Alimentar Panificadoras"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Alimentar Panificadoras</p>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    </div>
+                            </div>
+
+                            <a href="https://nicolasromeroo.github.io/alimentar/" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
                     </div>
-                    <div class="port-content">
-                        <h3>Alimentar Panificadoras</h3>
-                        <p>Sitio WEB para cadena de centros de distribución de panificados "Alimentar".</p>
-                        <a href="https://nicolasromeroo.github.io/alimentar/" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
+
+                    <div
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/cofi-.png" alt="Cofi"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Cofi</p>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/cofi" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
                     </div>
+
+                    <div
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/futbolSport.png" alt="Futbol Sport"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Futbol Sport - juego de azar
+                                    </p>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/Futbol-Sport" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/goodMates.png" alt="Good Mates"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Good Mates</p>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/Good-Mates" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/specialTravel-.png" alt="Special Travel"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Special Travel</p>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1" />
+                                    </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/special-travel" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/vanguardia.png" alt="Vanguardia"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Vanguardia SDB</p>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/vanguardia-sdb" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/app-chat.png" alt="AppChat Websockets"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">App chat con Websockets</p>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/aplicacionChatWebsockets" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- OTROS -->
+
+                    <div
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/mvcq.png" alt="MVCQ"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Me Visto Como Quiero</p>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/sass/CC6699" alt="SASS"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1" />
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/MevistoComoquiero" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/gastos.png" alt=" Gestor de gastos"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Gestor de gastos</p>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1" />
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1" />
+                                        <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/gestor-gastos" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="port-box mix todo">
-                    <div class="port-image">
-                        <img src="img/cofi-.png" alt="Cofi">
-                    </div>
-                    <div class="port-content">
-                        <h3>Cofi</h3>
-                        <p>Sitio WEB para cafetería "Cofi"
-                        </p>
-                        <a href="https://nicolasromeroo.github.io/cofi/" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="port-box mix todo destacados">
-                    <div class="port-image">
-                        <img src="img/goodMates.png" alt="Good Mates">
-                    </div>
-                    <div class="port-content">
-                        <h3>Good Mates - La matería</h3>
-                        <p>Sitio WEB para tienda de mates "Good Mates"
-                        </p>
-                        <a href="https://nicolasromeroo.github.io/Good-Mates/" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="port-box mix todo destacados csssass">
-                    <div class="port-image">
-                        <img src="img/mvcq.png" alt="MVCQ">
-                    </div>
-                    <div class="port-content">
-                        <h3>Me Visto Como Quiero</h3>
-                        <p>Sitio WEB para tienda de ropa "Me visto como quiero" - Proyecto final de DESARROLLO WEB en
-                            Coderhouse.</p>
-                        <a href="https://mevisto-comoquiero.vercel.app/" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="port-box mix todo">
-                    <div class="port-image">
-                        <img src="img/futbolSport.png" alt="Futbol Sport">
-                    </div>
-                    <div class="port-content">
-                        <h3>Futbol Sport</h3>
-                        <p>Juego de azar, sobre cartas y penales de fútbol
-                        </p>
-                        <a href="https://nicolasromeroo.github.io/Futbol-Sport/" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="port-box mix todo destacados">
-                    <div class="port-image">
-                        <img src="img/vanguardia.png" alt="Vanguardia">
-                    </div>
-                    <div class="port-content">
-                        <h3>Vanguardia - Súper de Barrio</h3>
-                        <p>Sitio WEB para cadena de súpermercados "Vanguardia Súper de Barrio"</p>
-                        <a href="https://nicolasromeroo.github.io/vanguardia-sdb/" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="port-box mix todo destacados react">
-                    <div class="port-image">
-                        <img src="img/specialTravel-.png" alt="Special Travel">
-                    </div>
-                    <div class="port-content">
-                        <h3>Special Travel</h3>
-                        <p>Sitio WEB para agencia de viajes "Special Travel" - Proyecto final de REACT en Coderhouse.
-                        </p>
-                        <a href="https://gentle-torte-aedf84.netlify.app/" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <!-- OTROS -->
-
-                <div class="port-box mix todo destacdos node">
-                    <div class="port-image">
-                        <img src="img/app-chat.png" alt="Aplicacion Chat">
-                    </div>
-                    <div class="port-content">
-                        <h3>Aplicacion Chat</h3>
-                        <p>Chat creado con Node, Express, Handlebars y Websockets</p>
-                        <a href="https://shy-caterwauling-leather.glitch.me/" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="port-box mix todo react">
-                    <div class="port-image">
-                        <img src="img/gestor-de-tareas.png" alt="Programa de tareas">
-                    </div>
-                    <div class="port-content">
-                        <h3>Gestor de tareas</h3>
-                        <p>Programa de tareas creado con React y Firebase</p>
-                        <a href="https://66c3d66b34adde5f83ce8b57--gestion-tareas.netlify.app/" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="port-box mix todo react python">
-                    <div class="port-image">
-                        <img src="img/gestor-de-gastos.png" alt="Programa de gastos">
-                    </div>
-                    <div class="port-content">
-                        <h3>Gastos</h3>
-                        <p>Gestor de gastos mensuales creado con React, Python y Flask</p>
-                        <a href="https://github.com/nicolasromeroo/gastos-mensuales" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="port-box mix todo destacados">
-                    <div class="port-image">
-                        <img src="img/utilidades.png" alt="Special Travel">
-                    </div>
-                    <div class="port-content">
-                        <h3>Utilidades, herramientas y juegos básicos</h3>
-                        <p>Repositorio que incluye herramientas, utilidades diarias, y juegos basicos. Creados con HTML,
-                            CSS Y Javascript.</p>
-                        <a href="https://nicolasromeroo.github.io/utilidades-herramientas-juegos/" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- contacto -->
-    <section id="contact" class="contact">
+    <!-- <section id="contact" class="contact" data-aos="fade-up">
         <div id="main-text-contact" class="main-text scroll-scale">
             <span>Dejame tu consulta</span>
             <h2>Contactame</h2>
         </div>
 
         <form action="#" class="scroll-bottom">
-            <!-- <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Nombre">
             <input type="text" placeholder="Email">
             <input type="text" placeholder="Direccion">
             <input type="number" placeholder="Numero">
             <textarea name="" id="" cols="30" rows="10" placeholder="Escribí acá tu comentario..."></textarea> -->
-            <div class="btn-box formBtn">
-                <a href="https://mail.google.com/mail/u/0/?hl=es#inbox?compose=CllgCJlHDcjHxLxJNHQGttQpWxwBRWGkXwSxJVcSRNrBdfzsjNJpWFNtCPhntBNVlDxrGFHrVsB"
-                    target="_blank">
-                    <button class="btn">Enviar mensaje</button>
-                </a>
-            </div>
-        </form>
-    </section>
+    <!-- <div class="btn-box formBtn">
+        <a href="https://mail.google.com/mail/u/0/?hl=es#inbox?compose=CllgCJlHDcjHxLxJNHQGttQpWxwBRWGkXwSxJVcSRNrBdfzsjNJpWFNtCPhntBNVlDxrGFHrVsB"
+            target="_blank">
+            <button class="btn">Enviar mensaje</button>
+        </a>
+    </div>
+    </form>
+    </section> -->
 
     <!---->
     <footer>
@@ -504,9 +741,13 @@
         <a href="#inicio"><i class='bx bx-up-arrow-alt'></i></a>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="mixitup.min.js"></script>
+    <!-- <script src="mixitup.min.js"></script> -->
     <script src="script.js"></script>
+
 </body>
 
 </html>
