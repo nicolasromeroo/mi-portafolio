@@ -1471,6 +1471,10 @@ footer a i {
     }
 }
 
+.neon-teal {
+    white-space: nowrap;
+}
+
 @media(max-width:420px) {
     html {
         font-size: 80%;
@@ -1508,10 +1512,6 @@ footer a i {
 
     .logo {
         margin-left: 120px;
-    }
-
-    .hanging-letter {
-        font-size: 25px;
     }
 
     .perf-prof {

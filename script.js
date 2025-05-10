@@ -1,12 +1,10 @@
 
-// sección PORTAFOLI
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
     card.addEventListener('click', (e) => {
-        e.stopPropagation(); // Evita que el click se propague a otros elementos
+        e.stopPropagation();
 
-        // Cierra todas las demás descripciones
         cards.forEach(otherCard => {
             if (otherCard !== card) {
                 otherCard.querySelector('.description').classList.add('hidden');
@@ -14,7 +12,6 @@ cards.forEach(card => {
             }
         });
 
-        // Toggle (mostrar/ocultar) la descripción del clic actual
         const description = card.querySelector('.description');
         description.classList.toggle('hidden');
         card.classList.toggle('z-50');
@@ -22,7 +19,6 @@ cards.forEach(card => {
 });
 
 
-// Opcional: Si quieres que al hacer click fuera de las tarjetas, se cierren todas
 document.addEventListener('click', () => {
     cards.forEach(card => {
         card.querySelector('.description').classList.add('hidden');
