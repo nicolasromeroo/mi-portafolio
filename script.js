@@ -1,5 +1,33 @@
 
-const cards = document.querySelectorAll('.card');
+const filterButtons = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".card");
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+
+        // Estilo activo en botón
+        filterButtons.forEach(btn => {
+            btn.classList.remove("bg-green-500");
+            btn.classList.add("bg-gray-800");
+        });
+        button.classList.add("bg-green-500");
+
+        // Mostrar/Ocultar tarjetas
+        cards.forEach(card => {
+            const category = card.dataset.category;
+            if (filter === "all" || category.includes(filter)) {
+                card.style.display = "block";
+                card.classList.add("opacity-100", "translate-y-0");
+                card.classList.remove("opacity-0", "-translate-y-4");
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
+
+// cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
     card.addEventListener('click', (e) => {

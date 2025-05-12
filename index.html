@@ -14,7 +14,7 @@
     <header>
         <div class="logo"> <span>N</span>icolás</div>
         <ul class="navlist">
-            <li><a href="#inicio">Inicio</a></li>
+            <!-- <li><a href="#inicio">Inicio</a></li> -->
             <li><a href="#about">Sobre mi</a></li>
             <li><a href="#services">Servicios</a></li>
             <li><a href="#skills">Habilidades</a></li>
@@ -23,7 +23,7 @@
         </ul>
         <div id="menu-icon" class="bx bx-menu"></div>
     </header>
-    <section id="inicio" class="min-h-screen flex flex-col justify-center items-center px-6 text-white">
+    <section id="about" class="min-h-screen flex flex-col justify-center items-center px-6 text-white">
         <div class="max-w-6xl w-full text-center" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center justify-center gap-10">
                 <!-- FOTO -->
@@ -62,11 +62,12 @@
                     </div>
 
                     <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-6">
-                        <a href="cv/romeroNicolasE25.docx" download
+                        <a href="cv/CVNICOLAS2025.docx" download
                             class="electric-button bg-teal-500 hover:bg-teal-400 text-white px-6 py-2 rounded-full shadow-2xl hover:shadow-xl transition transform hover:scale-105">
                             Descargar CV
                         </a>
-                        <a href="#main-text-contact"
+                        <a href="https://api.whatsapp.com/send?phone=5493515559573&text=Hola, tengo una consulta!"
+                            target="_blank"
                             class="border border-teal-500 hover:bg-teal-500 text-teal-400 hover:text-white px-6 py-2 rounded-full shadow-2xl hover:shadow-xl transition transform hover:scale-105">
                             Contáctame
                         </a>
@@ -101,7 +102,7 @@
     </section>
 
 
-    <section id="services" class="py-20 bg-gray-900 text-white" data-aos="slide-right">
+    <section class="py-20 bg-gray-900 text-white" data-aos="slide-right">
         <div class="text-center mb-16">
             <span class="text-teal-400 font-semibold uppercase tracking-widest">¿En qué puedo ayudarte?</span>
             <h2
@@ -113,7 +114,7 @@
             </p>
         </div>
 
-        <section id="skills" class="py-16 text-white " data-aos="fade-up">
+        <section class="py-16 text-white " data-aos="fade-up">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-12">
                     <span class="text-indigo-400 uppercase tracking-widest text-sm">¿En qué me destaco?</span>
@@ -139,7 +140,7 @@
                     <div class="mt-4">
                         <h4 class="text-teal-400 font-semibold text-sm mb-2">Stack que manejo:</h4>
                         <div class="mt-4">
-                            <div class="flex flex-wrap gap-2 justify-center">
+                            <div id="skills" class="flex flex-wrap gap-2 justify-center">
                                 <div
                                     class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
                                     <h3 class="text-xl font-semibold text-indigo-700 mb-4">Frontend</h3>
@@ -233,7 +234,7 @@
                         </div>
 
                         <!-- Bases de datos -->
-                        <div
+                        <div id="services"
                             class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
                             <h3 class="text-xl font-semibold text-indigo-700 mb-4">Bases de datos</h3>
                             <div class="flex flex-wrap gap-2">
@@ -358,7 +359,7 @@
             </div>
         </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 px-6 md:px-20">
+        <div id="services" class="grid grid-cols-1 md:grid-cols-3 gap-10 px-6 md:px-20">
             <div
                 class="bg-gray-800 rounded-3xl shadow-lg p-8 transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-105 border border-teal-500">
                 <div class="flex items-center justify-center mb-5">
@@ -421,7 +422,7 @@
         </div>
 
         <div class="text-center mt-12">
-            <a href="#contact"
+            <a href="#about"
                 class="inline-block px-8 py-4 bg-gradient-to-r from-teal-400 to-cyan-500 text-white font-semibold rounded-full shadow-lg transform transition hover:scale-105">
                 Contáctame para empezar tu proyecto 🚀
             </a>
@@ -443,20 +444,25 @@
             </h2>
         </div>
 
-        <div class="container mx-auto px-6">
+        <div id="portafolio" class="container mx-auto px-6">
             <div class="flex justify-center mb-8 space-x-4">
-                <button class="px-4 py-2 bg-gray-800 rounded-full hover:bg-green-500 transition">Todo</button>
-                <button class="px-4 py-2 bg-gray-800 rounded-full hover:bg-green-500 transition">Destacados</button>
-                <button class="px-4 py-2 bg-gray-800 rounded-full hover:bg-green-500 transition">React</button>
-                <button class="px-4 py-2 bg-gray-800 rounded-full hover:bg-green-500 transition">Node</button>
-                <button class="px-4 py-2 bg-gray-800 rounded-full hover:bg-green-500 transition">CSS & SASS</button>
+                <button data-filter="all"
+                    class="filter-btn px-4 py-2 bg-gray-800 rounded-full hover:bg-gray-500 shadow-x1 transition">Todo</button>
+                <button data-filter="destacados"
+                    class="filter-btn px-4 py-2 bg-gray-800 rounded-full hover:bg-gray-500 shadow-x1 transition">Destacados</button>
+                <button data-filter="react"
+                    class="filter-btn px-4 py-2 bg-gray-800 rounded-full hover:bg-gray-500 shadow-x1 transition">React</button>
+                <button data-filter="node"
+                    class="filter-btn px-4 py-2 bg-gray-800 rounded-full hover:bg-gray-500 shadow-x1 transition">Node</button>
+                <button data-filter="css"
+                    class="filter-btn px-4 py-2 bg-gray-800 rounded-full hover:bg-gray-500 shadow-x1 transition">CSS
+                    &
+                    SASS</button>
             </div>
-
-
 
             <div class="container mx-auto px-6">
                 <div class="relative flex space-x-[-100px]">
-                    <div
+                    <div data-category="todos css"
                         class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
                         <img src="img/alimentar-.png" alt="Alimentar Panificadoras"
                             class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
@@ -481,7 +487,7 @@
                         </div>
                     </div>
 
-                    <div
+                    <div data-category="todos css"
                         class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
                         <img src="img/cofi-.png" alt="Cofi"
                             class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
@@ -508,7 +514,7 @@
                         </div>
                     </div>
 
-                    <div
+                    <div data-category="todos css"
                         class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
                         <img src="img/futbolSport.png" alt="Futbol Sport"
                             class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
@@ -536,7 +542,7 @@
                         </div>
                     </div>
 
-                    <div
+                    <div data-category="todos css node"
                         class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
                         <img src="img/goodMates.png" alt="Good Mates"
                             class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
@@ -562,7 +568,7 @@
                             </a>
                         </div>
                     </div>
-                    <div
+                    <div data-category="todos react destacados"
                         class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
                         <img src="img/specialTravel-.png" alt="Special Travel"
                             class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
@@ -587,7 +593,7 @@
                         </div>
                     </div>
 
-                    <div
+                    <div data-category="todos css node destacados"
                         class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
                         <img src="img/vanguardia.png" alt="Vanguardia"
                             class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
@@ -614,7 +620,7 @@
                         </div>
                     </div>
 
-                    <div
+                    <div data-category="todos destacados node"
                         class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
                         <img src="img/app-chat.png" alt="AppChat Websockets"
                             class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
@@ -645,7 +651,7 @@
 
                     <!-- OTROS -->
 
-                    <div
+                    <div data-category="todos css"
                         class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
                         <img src="img/mvcq.png" alt="MVCQ"
                             class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
@@ -676,7 +682,7 @@
                         </div>
                     </div>
 
-                    <div
+                    <div data-category="todos react node destacados"
                         class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
                         <img src="img/gastos.png" alt=" Gestor de gastos"
                             class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
@@ -738,7 +744,7 @@
     <!---->
     <footer>
         <p class="scroll-scale">Copyright &copy; 2023 by Nico Romero. Todos los derechos reservados</p>
-        <a href="#inicio"><i class='bx bx-up-arrow-alt'></i></a>
+        <a href="#about"><i class='bx bx-up-arrow-alt'></i></a>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
