@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/services.css">
     <link rel="stylesheet" href="styles/filters.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
@@ -400,110 +401,6 @@
 
             </div>
         </div>
-
-
-        <style>
-            .skills-container {
-                perspective: 1000px;
-            }
-
-            .skill-card {
-                background-size: cover;
-                background-position: center;
-                transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-                position: relative;
-                min-height: 260px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 1rem;
-                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-                overflow: hidden;
-                transform-style: preserve-3d;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                transition: all 0.3s ease;
-                position: relative;
-                overflow: hidden;
-                min-height: 200px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .skill-card::before {
-                content: '';
-                position: absolute;
-                inset: 0;
-                background: linear-gradient(135deg, rgba(8, 47, 73, 0.95) 0%, rgba(4, 12, 24, 0.95) 100%);
-                transition: all 0.3s ease;
-                z-index: 1;
-                pointer-events: none;
-
-                mask-image: radial-gradient(circle 80px at var(--x, 50%) var(--y, 50%),
-                        rgba(0, 0, 0, 0) 0%,
-                        rgba(0, 0, 0, 1) 80%);
-                -webkit-mask-image: radial-gradient(circle 80px at var(--x, 50%) var(--y, 50%),
-                        rgba(0, 0, 0, 0) 0%,
-                        rgba(0, 0, 0, 1) 80%);
-                mask-mode: alpha;
-                mask-repeat: no-repeat;
-            }
-
-            .skill-card:hover {
-                transform: translateY(-8px) scale(1.02);
-                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
-            }
-
-            .skill-card:hover::before {
-                background: rgba(17, 24, 39, 0.7);
-                backdrop-filter: blur(2px);
-            }
-
-            .skill-title {
-                position: relative;
-                z-index: 2;
-                text-align: center;
-                padding: 1rem;
-                transition: all 0.3s ease;
-            }
-
-            .skill-icon {
-                position: absolute;
-                top: 1.5rem;
-                right: 1.5rem;
-                font-size: 1.5rem;
-                color: rgba(103, 232, 249, 0.9);
-                transition: all 0.3s ease;
-                z-index: 2;
-            }
-
-            .skill-card:hover .skill-icon {
-                transform: scale(1.2) rotate(5deg);
-                color: #67e8f9;
-            }
-
-            .skill-border {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                border: 2px solid transparent;
-                border-radius: 1rem;
-                background: linear-gradient(135deg, rgba(56, 189, 248, 0.5) 0%, rgba(99, 102, 241, 0.5) 100%) border-box;
-                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: destination-out;
-                -webkit-mask-composite: xor;
-                mask-composite: exclude;
-                pointer-events: none;
-            }
-
-            .skill-card:hover .skill-title {
-                transform: translateY(-10px);
-            }
-        </style>
 
         <div class="skills-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 z-10 w-full max-w-7xl px-6">
             <div class="skill-card group" style="background-image: url('./img/group.webp')">
@@ -960,6 +857,18 @@
         <a href="#about"><i class='bx bx-up-arrow-alt'></i></a>
     </footer>
 
+    <script>
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('mousemove', function (e) {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--x', `${x}px`);
+                card.style.setProperty('--y', `${y}px`);
+            });
+        });
+    </script>
+
     <script type="module">
         import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
 
@@ -1009,7 +918,6 @@
             camera.updateProjectionMatrix();
         });
     </script>
-    <!-- <script src="filters.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.tailwindcss.com"></script>
