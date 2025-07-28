@@ -1,0 +1,104 @@
+ .filter-container {
+     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+     min-height: 100vh;
+     padding: 2rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* 
+ .filter-btn {
+     border: 1px solid rgba(255, 255, 255, 0.1);
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+     backdrop-filter: blur(12px);
+     -webkit-backdrop-filter: blur(12px);
+
+     background: rgba(5, 93, 233, 0.6);
+ }*/
+ .filter-btn {
+     position: relative;
+     overflow: hidden;
+     transition: background-color 0.3s ease, transform 0.3s ease;
+ }
+
+ .filter-btn::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+     transition: 0.5s;
+ }
+
+ .filter-btn:hover::before {
+     left: 100%;
+ }
+
+ .filter-btn i {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%) scale(0);
+     font-size: 2rem;
+     opacity: 0;
+     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+
+ .filter-btn:hover i {
+     transform: translate(-50%, -50%) scale(1);
+     opacity: 1;
+ }
+
+ .filter-btn:hover span {
+     transform: translateY(20px);
+     opacity: 0;
+ }
+
+ .filter-btn span {
+     display: inline-block;
+     transition: all 0.3s ease;
+ }
+
+ /* Specific button styles */
+ .btn-all {
+     background: linear-gradient(135deg, #316f93 0%, #000000 100%);
+ }
+
+ .btn-featured {
+     background: linear-gradient(135deg, #316f93 0%, #000000 100%);
+ }
+
+ .btn-react {
+     background: linear-gradient(135deg, #316f93 0%, #000000 100%);
+ }
+
+ .btn-node {
+     background: linear-gradient(135deg, #316f93 0%, #000000 100%);
+ }
+
+ .btn-css {
+     background: linear-gradient(135deg, #316f93 0%, #000000 100%);
+ }
+
+ .btn-all:hover {
+     box-shadow: 0 0 20px rgba(5, 93, 233, 0.5);
+ }
+
+ .btn-featured:hover {
+     box-shadow: 0 0 20px rgba(5, 93, 233, 0.5);
+ }
+
+ .btn-react:hover {
+     box-shadow: 0 0 20px rgba(5, 93, 233, 0.5);
+ }
+
+ .btn-node:hover {
+     box-shadow: 0 0 20px rgba(5, 93, 233, 0.5);
+ }
+
+ .btn-css:hover {
+     box-shadow: 0 0 20px rgba(5, 93, 233, 0.5);
+ }

@@ -473,22 +473,77 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.logo {
-    margin-top: 15px;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #ffffff;
+.logo-glitch {
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
     position: relative;
-    right: 100px;
-    display: inline-block;
 }
 
-.logo span {
+.logo-glitch::before,
+.logo-glitch::after {
+    content: "Nicolás";
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
     color: var(--hover-color);
-    text-shadow: var(--neon-glow);
-    animation: flickerr 2.5s infinite alternate;
+    clip: rect(0, 0, 0, 0);
 }
+
+.logo-glitch::before {
+    animation: glitchTop 2s infinite;
+}
+
+.logo-glitch::after {
+    animation: glitchBottom 2s infinite;
+}
+
+@keyframes glitchTop {
+    0% {
+        clip: rect(0, 9999px, 0, 0);
+    }
+
+    10% {
+        clip: rect(0, 9999px, 20px, 0);
+    }
+
+    20% {
+        clip: rect(0, 9999px, 0, 0);
+    }
+
+    30% {
+        clip: rect(0, 9999px, 15px, 0);
+    }
+
+    100% {
+        clip: rect(0, 9999px, 0, 0);
+    }
+}
+
+@keyframes glitchBottom {
+    0% {
+        clip: rect(0, 9999px, 0, 0);
+    }
+
+    10% {
+        clip: rect(10px, 9999px, 30px, 0);
+    }
+
+    20% {
+        clip: rect(0, 9999px, 0, 0);
+    }
+
+    40% {
+        clip: rect(20px, 9999px, 40px, 0);
+    }
+
+    100% {
+        clip: rect(0, 9999px, 0, 0);
+    }
+}
+
+
 
 .navlist {
     display: flex;

@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "lucide": "^0.526.0",
+    "three": "^0.178.0",
     "typed.js": "^2.1.0"
-  }
+  },
+  "type": "module"
 }

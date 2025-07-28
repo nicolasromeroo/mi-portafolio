@@ -6,459 +6,612 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/filters.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
     <title>Mi Portafolio</title>
 </head>
 
 <body>
     <header>
-        <div class="logo"> <span>N</span>icolás</div>
+        <div class="logo-glitch">Nicolás</div>
         <ul class="navlist">
-            <!-- <li><a href="#inicio">Inicio</a></li> -->
             <li><a href="#about">Sobre mi</a></li>
-            <li><a href="#services">Servicios</a></li>
+            <li><a href="#experience">Experiencia</a></li>
             <li><a href="#skills">Habilidades</a></li>
             <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#about">Contacto</a></li>
         </ul>
         <div id="menu-icon" class="bx bx-menu"></div>
     </header>
-    <section id="about" class="min-h-screen flex flex-col justify-center items-center px-6 text-white">
+    <section id="about" class="min-h-screen flex flex-col justify-center items-center text-white">
         <div class="max-w-6xl w-full text-center" data-aos="fade-up">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
-                <!-- FOTO -->
-                <div class="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-teal-400 shadow-xl transform hover:scale-105 transition-all duration-300"
-                    data-aos="fade-right">
-                    <img src="img/yo3.jpeg" alt="Nicolás Romero" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-teal-400 opacity-10 hover:opacity-0 transition duration-300"></div>
-                </div>
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="relative w-full h-[100vh] flex items-center justify-center overflow-hidden bg-transparent"
+                    id="avatar-section">
 
-                <!-- TEXTO PRINCIPAL -->
-                <div class="md:text-left text-center" data-aos="fade-left">
-                    <div class="md:text-left text-center text-teal-400" data-aos="fade-left">
-                        <h1 class="neon-teal text-4xl sm:text-5xl font-extrabold mb-4 animate-pulse text-teal-300">
-                            H<span class="text-white text-shadow-lg flicker-once text-teal-400 smoke-effect">o</span>la,
-                            so<span class="text-white text-shadow-lg flicker-slow text-teal-400">y</span>
-                            <span class="text-teal-300 neon-teal">Nicolás <span
-                                    class="text-teal-50 hanging-letter">R</span>omero</span>
+                    <canvas id="three-bg" class="absolute inset-0 w-full h-full z-0"></canvas>
 
-                        </h1>
+                    <div class="relative z-10 group transition-transform duration-500 hover:scale-105">
+                        <div
+                            class="relative w-52 h-52 md:w-64 md:h-64 rounded-full shadow-5xl bg-gradient-to-br from-cyan-800/10 to-slate-800/30 backdrop-blur-md overflow-hidden flex items-center justify-center">
 
-                        <h3 class="neon-teal text-white text-2xl sm:text-3xl font-semibold mb-6 text-teal-300">
-                            y soy <span id="typed-text" class="text-teal-300"></span>
-                        </h3>
+                            <div class="absolute inset-0 z-0">
+                                <div
+                                    class="absolute w-full h-full rounded-full bg-cyan-500 blur-3xl opacity-10 group-hover:opacity-20 transition duration-500 animate-pulse">
+                                </div>
+                            </div>
+
+                            <img src="img/yo-bitmoji.jpg" alt="Nicolás Romero"
+                                class="relative z-10 w-44 h-44 md:w-56 md:h-56 object-contain transition-transform duration-500 group-hover:scale-105 drop-shadow-xl" />
+
+                            <div
+                                class="absolute inset-0 rounded-full ring-2 ring-cyan-400/20 group-hover:ring-cyan-400/40 transition duration-500 pointer-events-none">
+                            </div>
+                        </div>
                     </div>
 
 
-                    <div class="space-y-2 mb-6">
-                        <p>Email:
-                            <a href="mailto:nicolasdev290300@gmail.com"
-                                class="text-teal-400 hover:underline hover:text-teal-300 transition">nicromeroe@gmail.com
+                    <div class="md:text-left text-center ml-10" data-aos="fade-left">
+                        <div class="md:text-left text-center text-teal-400" data-aos="fade-left">
+                            <h1 class="neon-teal text-4xl sm:text-5xl font-extrabold mb-4 animate-pulse text-teal-300">
+                                H<span
+                                    class="text-white text-shadow-lg flicker-once text-teal-400 smoke-effect">o</span>la,
+                                so<span class="text-white text-shadow-lg flicker-slow text-teal-400">y</span>
+                                <span class="text-teal-300 neon-teal">Nicolás <span
+                                        class="text-teal-50 hanging-letter">R</span>omero</span>
+
+                            </h1>
+
+                            <h3 class="neon-teal text-white text-2xl sm:text-3xl font-semibold mb-6 text-teal-300">
+                                y soy <span id="typed-text" class="text-teal-300"></span>
+                            </h3>
+                        </div>
+
+
+                        <div class="space-y-2 mb-6">
+                            <p class="text-sm uppercase tracking-widest">Email:
+                                <a href="mailto:nicolasdev290300@gmail.com"
+                                    class="text-teal-400 hover:underline hover:text-teal-300 transition">nicromeroe@gmail.com
+                                </a>
+                            </p>
+                            <p class="text-sm uppercase tracking-widest">GitHub:
+                                <a href="https://github.com/nicolasromeroo" target="_blank"
+                                    class="text-teal-400 hover:underline hover:text-teal-300 transition ">github.com/nicolasromeroo</a>
+                            </p>
+                        </div>
+
+                        <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-6">
+                            <a href="cv/NicolasEmilianoRomero.docx" download
+                                class="electric-button bg-teal-500 hover:bg-teal-400 text-white px-6 py-2 rounded-full shadow-2xl hover:shadow-xl transition transform hover:scale-105">
+                                Descargar CV
                             </a>
-                        </p>
-                        <p>GitHub:
+                            <a href="https://api.whatsapp.com/send?phone=5493515559573&text=Hola, tengo una consulta!"
+                                target="_blank"
+                                class="border border-teal-500 hover:bg-teal-500 text-teal-400 hover:text-white px-6 py-2 rounded-full shadow-2xl hover:shadow-xl transition transform hover:scale-105">
+                                Contáctame
+                            </a>
+                        </div>
+
+                        <div class="flex justify-center md:justify-start gap-6 text-3xl mb-6 ">
+                            <a href="https://www.instagram.com/nicoromeroooo/" target="_blank"
+                                class="hover:text-pink-500 transition transform hover:scale-125">
+                                <i class='bx bxl-instagram icon-electric'></i>
+                            </a>
                             <a href="https://github.com/nicolasromeroo" target="_blank"
-                                class="text-teal-400 hover:underline hover:text-teal-300 transition">github.com/nicolasromeroo</a>
-                        </p>
-                    </div>
-
-                    <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-6">
-                        <a href="cv/NicolasEmilianoRomero25.pdf" download
-                            class="electric-button bg-teal-500 hover:bg-teal-400 text-white px-6 py-2 rounded-full shadow-2xl hover:shadow-xl transition transform hover:scale-105">
-                            Descargar CV
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=5493515559573&text=Hola, tengo una consulta!"
-                            target="_blank"
-                            class="border border-teal-500 hover:bg-teal-500 text-teal-400 hover:text-white px-6 py-2 rounded-full shadow-2xl hover:shadow-xl transition transform hover:scale-105">
-                            Contáctame
-                        </a>
-                    </div>
-
-                    <div class="flex justify-center md:justify-start gap-6 text-3xl mb-6">
-                        <a href="https://www.instagram.com/nicoromeroooo/" target="_blank"
-                            class="hover:text-pink-500 transition transform hover:scale-125">
-                            <i class='bx bxl-instagram icon-electric'></i>
-                        </a>
-                        <a href="https://github.com/nicolasromeroo" target="_blank"
-                            class="hover:text-gray-300 transition transform hover:scale-125">
-                            <i class='bx bxl-github icon-electric'></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nicolas-romero-7465572b1/" target="_blank"
-                            class="hover:text-blue-500 transition transform hover:scale-125">
-                            <i class='bx bxl-linkedin-square icon-electric'></i>
-                        </a>
+                                class="hover:text-gray-300 transition transform hover:scale-125">
+                                <i class='bx bxl-github icon-electric'></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nicromeroe/" target="_blank"
+                                class="hover:text-blue-500 transition transform hover:scale-125">
+                                <i class='bx bxl-linkedin-square icon-electric'></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- STACK DE TECNOLOGÍAS -->
-            <div class="mt-10 flex flex-wrap justify-center gap-6" data-aos="zoom-in">
-                <img src="img/mongodb.png" class="h-12 transform hover:scale-110 transition duration-300 shadow-xl">
-                <img src="img/express.png"
-                    class="h-12 transform hover:scale-110 transition duration-300 shadow-xl icon-electric">
-                <img src="img/react.png" class="h-12 transform hover:scale-110 transition duration-300 shadow-xl">
-                <img src="img/node.png" class="h-12 transform hover:scale-110 transition duration-300 shadow-xl">
+            <div class="mt-10 flex flex-wrap justify-center gap-10 mb-12" data-aos="zoom-in">
+                <img src="img/mongodb.png" class="h-12 transform hover:scale-110 transition duration-300">
+                <img src="img/express.png" class="h-12 transform hover:scale-110 transition duration-300">
+                <img src="img/react.png" class="h-12 transform hover:scale-110 transition duration-300">
+                <img src="img/node.png" class="h-12 transform hover:scale-110 transition duration-300">
             </div>
         </div>
     </section>
 
 
-    <section class="py-20 bg-gray-900 text-white" data-aos="slide-right">
-        <div class="text-center mb-16">
-            <span class="text-teal-400 font-semibold uppercase tracking-widest">¿En qué puedo ayudarte?</span>
-            <h2
-                class="text-4xl md:text-5xl font-extrabold mt-3 bg-gradient-to-r from-teal-400 to-cyan-500 text-transparent bg-clip-text">
-                Servicios profesionales para impulsar tu proyecto
-            </h2>
-            <p class="mt-6 text-gray-300 max-w-2xl mx-auto text-lg">
-                Diseño y desarrollo soluciones digitales a medida que impulsan tu negocio al siguiente nivel.
-            </p>
+    <section class="relative py-20 bg-black text-white font-mono overflow-hidden" id="experience" data-aos="fade-up">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#0ff_1px,transparent_1px)] bg-[length:20px_20px]">
         </div>
 
-        <section class="py-16 text-white " data-aos="fade-up">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <span class="text-indigo-400 uppercase tracking-widest text-sm">¿En qué me destaco?</span>
-                    <h2 class="text-4xl font-bold mt-2 mb-4">Mis habilidades</h2>
-                    <span id="typed-text" class="text-indigo-300 text-lg"></span>
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start relative z-10">
+
+            <div class="space-y-6 mb-12">
+                <div class="text-sm uppercase text-cyan-400 tracking-widest">> Experiencies</div>
+                <h2
+                    class="text-3xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent leading-tight">
+                    Impulsá tu producto<br> con soluciones full stack
+                </h2>
+                <p class="text-gray-400 text-md leading-relaxed">
+                    Desarrollo soluciones a medida, diseño experiencias intuitivas, y conecto sistemas para que tu
+                    proyecto funcione como un motor bien calibrado.
+                </p>
+            </div>
+
+            <div class="bg-gray-900 border border-gray-700 rounded-xl shadow-xl p-6 text-green-400 text-sm font-mono">
+                <div class="mb-4 text-cyan-500 font-bold">/last-experience</div>
+                <div class="space-y-2">
+                    <p><span class="text-cyan-300">✔</span> Full Stack Developer at Vanguardia M&S</p>
+                    <p><span class="text-cyan-300">✔</span> Deposit manager at Vanguardia M&S</p>
+                    <p><span class="text-cyan-300">✔</span> Full Stack Developer at Good Mates</p>
+                    <p><span class="text-cyan-300">✔</span> Full Stack Developer at MeVistoCQ</p>
+                    <p><span class="text-cyan-300">✔</span> Tecnichal Support at VPO Contact Center</p>
+                    <p><span class="text-cyan-300">✔</span> Tecnichal Support at Protection One</p>
+                    <p><span class="text-cyan-300">✔</span> Colaboration on projects</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="w-full min-h-screen bg-gradient-to-br from-black via-slate-900 to-indigo-950 py-20 px-6"
+            id="skills">
+            <div class="max-w-6xl mx-auto mb-20 px-6">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+                    <div class="text-center md:text-left flex-1">
+                        <div class="text-sm uppercase text-cyan-400 tracking-widest">> Skills</div>
+                        <h2
+                            class="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-transparent bg-clip-text drop-shadow-sm">
+                            Stack Tecnológico
+                        </h2>
+                        <p class="mt-4 text-gray-300 text-lg md:text-xl font-mono max-w-xl leading-relaxed">
+                            Tecnologías con las que construyo experiencias digitales modernas, eficientes y atractivas.
+                        </p>
+                    </div>
+
+                    <div class="relative flex-shrink-0">
+                        <img src="img/books.png" alt="Avatar"
+                            class="w-40 md:w-56 lg:w-64 drop-shadow-xl transition-transform duration-300 hover:scale-105" />
+                        <div
+                            class="absolute w-40 h-40 md:w-56 md:h-56 rounded-full bg-cyan-500 blur-3xl opacity-20 -z-10 top-3 left-3">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 auto-rows-[170px] gap-6 grid-flow-dense">
+
+                <div
+                    class="col-span-4 row-span-2 bg-slate-800/70 rounded-2xl border border-cyan-500/20 shadow-md p-6 hover:shadow-cyan-500/40 transition-transform hover:-translate-y-2 group relative backdrop-blur-lg">
+                    <h3 class="text-xl font-semibold text-cyan-400 mb-3 font-mono">Frontend</h3>
+                    <ul class="space-y-2 text-gray-300 font-mono text-sm">
+                        <li class="flex items-center gap-5"><i
+                                class="devicon-react-original colored text-lg"></i>React.js</li>
+                        <li class="flex items-center gap-5"><i
+                                class="devicon-tailwindcss-plain colored text-lg"></i>Tailwind</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg"
+                                class="w-5 h-5" />Vite</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                class="w-5 h-5" />HTML</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                class="w-5 h-5" />CSS</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                class="w-5 h-5" />JavaScript</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                class="w-5 h-5" />Bootstrap</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
+                                class="w-5 h-5" />Material UI</li>
+                    </ul>
                 </div>
 
                 <div
-                    class="bg-gray-800 rounded-3xl shadow-lg p-8 transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl border border-teal-500 relative overflow-hidden">
-                    <div class="flex items-center justify-center mb-5">
-                        <div
-                            class="w-20 h-20 rounded-full bg-teal-700 flex items-center justify-center transform transition duration-500 hover:rotate-12">
-                            <i data-lucide="monitor" class="w-10 h-10 text-white"></i>
-                        </div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-center text-teal-300 mb-4">Full Stack Development</h3>
-
-                    <p class="text-gray-300 text-center text-base leading-relaxed mb-4">
-                        Transformo ideas en experiencias interactivas, creando interfaces modernas, responsivas y
-                        optimizadas.
-                    </p>
-
-                    <div class="mt-4">
-                        <h4 class="text-teal-400 font-semibold text-sm mb-2">Stack que manejo:</h4>
-                        <div class="mt-4">
-                            <div id="skills" class="flex flex-wrap gap-2 justify-center">
-                                <div
-                                    class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
-                                    <h3 class="text-xl font-semibold text-indigo-700 mb-4">Frontend</h3>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
-                                                class="w-4 h-4">
-                                            HTML
-                                        </span>
-                                        <span
-                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                            <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
-                                                class="w-4 h-4">
-                                            CSS
-                                        </span>
-                                        <span
-                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                            <img src="https://cdn.simpleicons.org/sass/CC6699" alt="SASS"
-                                                class="w-4 h-4">
-                                            SASS
-                                        </span>
-                                        <span
-                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                            <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap"
-                                                class="w-4 h-4">
-                                            Bootstrap
-                                        </span>
-                                        <span
-                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                            <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind"
-                                                class="w-4 h-4">
-                                            Tailwind
-                                        </span>
-                                        <span
-                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                            <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
-                                                class="w-4 h-4">
-                                            JavaScript
-                                        </span>
-                                        <span
-                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                            <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
-                                                class="w-4 h-4">
-                                            React
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-5">
-                        <div
-                            class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
-                            <h3 class="text-xl font-semibold text-indigo-700 mb-4">Backend</h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                                        alt="Node.js" class="w-4 h-4"> Node.js
-                                </span>
-                                <span
-                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-                                        alt="Docker" class="w-4 h-4"> Docker
-                                </span>
-                                <span
-                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
-                                        alt="Kubernetes" class="w-4 h-4"> Kubernetes
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Frameworks -->
-                        <div
-                            class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
-                            <h3 class="text-xl font-semibold text-indigo-700 mb-4">Frameworks</h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                                        alt="Express" class="w-4 h-4"> Express
-                                </span>
-                                <span
-                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg"
-                                        alt="NestJS" class="w-4 h-4"> NestJS
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Bases de datos -->
-                        <div id="services"
-                            class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
-                            <h3 class="text-xl font-semibold text-indigo-700 mb-4">Bases de datos</h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                    <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" class="w-4 h-4">
-                                    MongoDB
-                                </span>
-                                <span
-                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                    <img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firestore"
-                                        class="w-4 h-4">
-                                    Firestore
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Control de versiones -->
-                        <div
-                            class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
-                            <h3 class="text-xl font-semibold text-indigo-700 mb-4">Control de versiones</h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                    <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" class="w-4 h-4"> Git
-                                </span>
-                                <span
-                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                    <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" class="w-4 h-4">
-                                    GitHub
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Testing -->
-                        <div
-                            class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
-                            <h3 class="text-xl font-semibold text-indigo-700 mb-4">Testing</h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                    <img src="https://cdn.simpleicons.org/jest/C21325" alt="Supertest" class="w-4 h-4">
-                                    Supertest
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Autenticación -->
-                        <div
-                            class="bg-indigo-100 rounded-2xl shadow-md p-6 hover:-translate-y-2 hover:shadow-xl transition transform">
-                            <h3 class="text-xl font-semibold text-indigo-700 mb-4">Autenticación<h3>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="neon-pill bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-white-200 transition flex items-center gap-1">
-                                            <img src="https://cdn.simpleicons.org/jsonwebtokens/000000" alt="JWT"
-                                                class="w-4 h-4">
-                                            JWT
-                                        </span>
-                                    </div>
-                        </div>
-
-                    </div>
-                    <section class="py-16 text-white perf-prof" data-aos="fade-up">
-                        <div class="container mx-auto px-6">
-                            <div
-                                class="bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-3xl shadow-2xl p-10 hover:shadow-indigo-500/50 transition duration-500 transform hover:-translate-y-2">
-                                <h3
-                                    class="text-4xl font-extrabold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-green-400 to-cyan-400 animate-pulse">
-                                    Perfil Profesional
-                                </h3>
-                                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                    <li
-                                        class="flex items-center p-4 bg-gray-700 bg-opacity-50 rounded-xl hover:bg-gray-600 transition">
-                                        <span class="w-4 h-4 bg-green-400 rounded-full mr-4 animate-ping"></span>
-                                        <div>
-                                            <p class="text-lg font-semibold">Trabajo en equipo</p>
-                                            <p class="text-sm text-gray-400">Intermedio - Avanzado</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="flex items-center p-4 bg-gray-700 bg-opacity-50 rounded-xl hover:bg-gray-600 transition">
-                                        <span class="w-4 h-4 bg-green-400 rounded-full mr-4 animate-ping"></span>
-                                        <div>
-                                            <p class="text-lg font-semibold">Creatividad</p>
-                                            <p class="text-sm text-gray-400">Avanzado</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="flex items-center p-4 bg-gray-700 bg-opacity-50 rounded-xl hover:bg-gray-600 transition">
-                                        <span class="w-4 h-4 bg-green-400 rounded-full mr-4 animate-ping"></span>
-                                        <div>
-                                            <p class="text-lg font-semibold">Gestión de proyectos</p>
-                                            <p class="text-sm text-gray-400">Intermedio - Avanzado</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="flex items-center p-4 bg-gray-700 bg-opacity-50 rounded-xl hover:bg-gray-600 transition">
-                                        <span class="w-4 h-4 bg-green-400 rounded-full mr-4 animate-ping"></span>
-                                        <div>
-                                            <p class="text-lg font-semibold">Capacidad analítica</p>
-                                            <p class="text-sm text-gray-400">Intermedio - Avanzado</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <div class="mt-4 text-center">
-                        <p class="text-sm text-gray-400 italic mb-2">+10 proyectos realizados (ecommerce, portfolios,
-                            sistemas)
-                        </p>
-                    </div>
-
-                    <div class="text-center mt-6">
-                        <a href="#portafolio"
-                            class="inline-block px-6 py-2 bg-gradient-to-r from-teal-400 to-cyan-500 text-white font-semibold rounded-full shadow-lg transform transition hover:scale-105 text-sm">
-                            Ver proyectos 🚀
-                        </a>
-                    </div>
+                    class="col-span-3 row-span-2 bg-slate-800/70 rounded-2xl border border-purple-500/20 shadow-md p-6 hover:shadow-purple-500/40 transition-transform hover:-translate-y-2 group relative backdrop-blur-lg">
+                    <h3 class="text-xl font-semibold text-purple-300 mb-3 font-mono">Backend</h3>
+                    <ul class="space-y-2 text-gray-300 font-mono text-sm">
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                class="w-5 h-5" />Node.js</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                class="w-5 h-5" />TypeScript</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                class="w-5 h-5" />Python</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                class="w-5 h-5" />Express</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"
+                                class="w-5 h-5" />Nest.js</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg"
+                                class="w-5 h-5" />Handlebars</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                                class="w-5 h-5" />Postman</li>
+                    </ul>
                 </div>
+
+                <div
+                    class="col-span-3 row-span-1 bg-slate-800/70 rounded-2xl border border-emerald-500/20 shadow-md p-6 hover:shadow-emerald-500/40 transition-transform hover:-translate-y-2 group relative backdrop-blur-lg">
+                    <h3 class="text-xl font-semibold text-emerald-300 mb-3 font-mono">Bases de Datos</h3>
+                    <ul class="space-y-2 text-gray-300 font-mono text-sm">
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                class="w-5 h-5" />MongoDB</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg"
+                                class="w-5 h-5" />Firebase</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="col-span-2 row-span-1 bg-slate-800/70 rounded-2xl border border-red-500/20 shadow-md p-6 hover:shadow-red-500/40 transition-transform hover:-translate-y-2 group relative backdrop-blur-lg">
+                    <h3 class="text-xl font-semibold text-red-400 mb-3 font-mono">Seguridad</h3>
+                    <ul class="space-y-2 text-gray-300 font-mono text-sm">
+                        <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="24" height="24" viewBox="0 0 48 48">
+                                <polygon fill="#546e7a"
+                                    points="21.906,31.772 24.507,29.048 27.107,31.772 27.107,43 21.906,43"></polygon>
+                                <polygon fill="#f50057"
+                                    points="17.737,29.058 21.442,28.383 21.945,32.115 15.345,41.199 11.138,38.141">
+                                </polygon>
+                                <polygon fill="#d500f9"
+                                    points="15.962,24.409 19.355,26.041 17.569,29.356 6.89,32.825 5.283,27.879">
+                                </polygon>
+                                <polygon fill="#29b6f6"
+                                    points="17.256,19.607 19.042,22.922 15.649,24.554 4.97,21.084 6.577,16.137">
+                                </polygon>
+                                <polygon fill="#00e5ff"
+                                    points="21.126,16.482 20.623,20.214 16.918,19.539 10.318,10.455 14.526,7.398">
+                                </polygon>
+                                <polygon fill="#546e7a"
+                                    points="26.094,16.228 23.493,18.952 20.893,16.228 20.893,5 26.094,5"></polygon>
+                                <polygon fill="#f50057"
+                                    points="30.262,18.943 26.558,19.618 26.055,15.886 32.654,6.802 36.862,9.859">
+                                </polygon>
+                                <polygon fill="#d500f9"
+                                    points="32.039,23.59 28.645,21.958 30.431,18.643 41.11,15.174 42.717,20.12">
+                                </polygon>
+                                <polygon fill="#29b6f6"
+                                    points="30.744,28.393 28.958,25.078 32.351,23.447 43.03,26.916 41.423,31.863">
+                                </polygon>
+                                <polygon fill="#00e5ff"
+                                    points="26.874,31.518 27.378,27.786 31.082,28.461 37.682,37.545 33.474,40.602">
+                                </polygon>
+                            </svg>JWT</li>
+                        <li class="flex items-center gap-2"> <img width="24" height="24"
+                                src="https://img.icons8.com/ios/50/lock-2.png" alt="lock-2" />Bcrypt</li>
+                        <li class="flex items-center gap-2"><img width="24" height="24"
+                                src="https://img.icons8.com/dotty/80/hashtag-2.png" alt="hashtag-2" />Hashing</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="col-span-2 row-span-1 bg-slate-800/70 rounded-2xl border border-orange-500/20 shadow-md p-6 hover:shadow-orange-500/40 transition-transform hover:-translate-y-2 group relative backdrop-blur-lg">
+                    <h3 class="text-xl font-semibold text-orange-300 mb-3 font-mono">DevOps</h3>
+                    <ul class="space-y-2 text-gray-300 font-mono text-sm">
+                        <li class="flex items-center gap-2"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                class="w-5 h-5" />Docker</li>
+                        <li class="flex items-center gap-2"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg"
+                                class="w-5 h-5" />Kubernetes</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="col-span-3 row-span-1 bg-slate-800/70 rounded-2xl border border-yellow-500/20 shadow-md p-6 hover:shadow-yellow-500/40 transition-transform hover:-translate-y-2 group relative backdrop-blur-lg">
+                    <h3 class="text-xl font-semibold text-yellow-300 mb-3 font-mono">Testing</h3>
+                    <ul class="space-y-2 text-gray-300 font-mono text-sm">
+                        <li class="flex items-center gap-2"><img width="25" height="25"
+                                src="https://img.icons8.com/external-tal-revivo-duo-tal-revivo/25/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-duo-tal-revivo.png"
+                                alt="external-jest-can-collect-code-coverage-information-from-entire-projects-logo-duo-tal-revivo" />Jest
+                        </li>
+                        <li class="flex items-center gap-2">Supertest</li>
+                        <div class="flex flex-row items-center gap-2">
+                            <li class="flex flex-row items-center gap-2">Mocha -</li>
+                            <li class="flex flex-row items-center gap-2">Chai</li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div
+                    class="col-span-5 row-span-1 bg-slate-800/70 rounded-2xl border border-yellow-500/20 shadow-md p-6 hover:shadow-yellow-500/40 transition-transform hover:-translate-y-2 group relative backdrop-blur-lg">
+                    <h3 class="text-xl font-semibold text-yellow-300 mb-4 font-mono">Control de versiones</h3>
+                    <ul class="space-y-2 text-gray-300 font-mono text-sm">
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                class="w-5 h-5" />Git
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                class="w-5 h-5" />GitHub
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+                                class="w-5 h-5" />GitLab
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="col-span-7 row-span-1 bg-slate-800/70 rounded-2xl border border-cyan-500/20 shadow-md p-6 hover:shadow-cyan-500/40 transition-transform hover:-translate-y-2 group relative backdrop-blur-lg">
+                    <h3 class="text-xl font-semibold text-cyan-300 mb-4 font-mono">Consola & Sistemas</h3>
+                    <ul class="grid grid-cols-2 gap-3 text-gray-300 font-mono text-sm">
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+                                class="w-5 h-5" />Bash
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                                class="w-5 h-5" />Linux
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/powershell.png"
+                                class="w-5 h-5" />PowerShell
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
+                                class="w-5 h-5" />Windows
+                        </li>
+                    </ul>
+                </div>
+
+
 
             </div>
         </section>
+    </section>
 
-        <div id="services" class="grid grid-cols-1 md:grid-cols-3 gap-10 px-6 md:px-20">
-            <div
-                class="bg-gray-800 rounded-3xl shadow-lg p-8 transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-105 border border-teal-500">
-                <div class="flex items-center justify-center mb-5">
+    <section
+        class="min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-br from-[#0a0a0a] via-[#0d1b2a] to-[#1a1a40] text-white px-6 relative overflow-hidden font-mono py-20">
+        <div class="max-w-6xl mx-auto mb-20 px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+
+                <div class="relative flex-shrink-0">
+                    <img src="img/notebook.png" alt="Avatar"
+                        class="w-40 md:w-56 lg:w-64 drop-shadow-xl transition-transform duration-300 hover:scale-105" />
                     <div
-                        class="w-20 h-20 rounded-full bg-teal-700 flex items-center justify-center transform transition duration-500 hover:rotate-12">
-                        <i data-lucide="database" class="w-10 h-10 text-white"></i>
+                        class="absolute w-40 h-40 md:w-56 md:h-56 rounded-full bg-cyan-500 blur-3xl opacity-20 -z-10 top-3 left-3">
                     </div>
                 </div>
-                <h3 class="text-2xl font-bold text-center text-teal-300 mb-4">Bases de Datos</h3>
-                <p class="text-gray-300 text-center text-base leading-relaxed mb-4">
-                    Diseño, integración y optimización de bases de datos relacionales y NoSQL para un manejo seguro y
-                    eficiente.
-                </p>
-                <ul class="text-gray-400 text-sm list-disc list-inside mb-2">
-                    <li>MongoDB, Firestore</li>
-                    <li>Optimización de consultas</li>
-                    <li>Seguridad y respaldos</li>
-                </ul>
-            </div>
 
-            <div
-                class="bg-gray-800 rounded-3xl shadow-lg p-8 transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-105 border border-teal-500">
-                <div class="flex items-center justify-center mb-5">
-                    <div
-                        class="w-20 h-20 rounded-full bg-teal-700 flex items-center justify-center transform transition duration-500 hover:rotate-12">
-                        <i data-lucide="code" class="w-10 h-10 text-white"></i>
-                    </div>
+                <div class="text-center md:text-left flex-1">
+                    <div class="text-sm uppercase text-cyan-400 tracking-widest">> Services</div>
+                    <h2
+                        class="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-transparent bg-clip-text drop-shadow-sm">
+                        ¿En qué me destaco?
+                    </h2>
+                    <p class="mt-4 text-gray-300 text-lg md:text-xl font-mono max-w-xl leading-relaxed">
+                        En cada proyecto, me enfoco en resolver problemas complejos de manera eficiente y creativa,
+                        utilizando las últimas tecnologías y metodologías modernas.
+                    </p>
                 </div>
-                <h3 class="text-2xl font-bold text-center text-teal-300 mb-4">Desarrollo Web</h3>
-                <p class="text-gray-300 text-center text-base leading-relaxed mb-4">
-                    Construcción de aplicaciones web dinámicas y responsivas usando frameworks modernos, con foco en
-                    rendimiento y escalabilidad.
-                </p>
-                <ul class="text-gray-400 text-sm list-disc list-inside mb-2">
-                    <li>React, Node, NestJS</li>
-                    <li>APIs REST</li>
-                    <li>Integración con servicios externos</li>
-                </ul>
-            </div>
 
-            <div
-                class="bg-gray-800 rounded-3xl shadow-lg p-8 transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-105 border border-teal-500">
-                <div class="flex items-center justify-center mb-5">
-                    <div
-                        class="w-20 h-20 rounded-full bg-teal-700 flex items-center justify-center transform transition duration-500 hover:rotate-12">
-                        <i data-lucide="palette" class="w-10 h-10 text-white"></i>
-                    </div>
-                </div>
-                <h3 class="text-2xl font-bold text-center text-teal-300 mb-4">Diseño UI/UX</h3>
-                <p class="text-gray-300 text-center text-base leading-relaxed mb-4">
-                    Creación de interfaces visuales intuitivas, atractivas y centradas en la experiencia del usuario
-                    para potenciar tu producto.
-                </p>
-                <ul class="text-gray-400 text-sm list-disc list-inside mb-2">
-                    <li>Wireframes y prototipos</li>
-                    <li>Diseño responsivo</li>
-                    <li>Pruebas de usabilidad</li>
-                </ul>
+
             </div>
         </div>
 
-        <div class="text-center mt-12">
-            <a href="#about"
-                class="inline-block px-8 py-4 bg-gradient-to-r from-teal-400 to-cyan-500 text-white font-semibold rounded-full shadow-lg transform transition hover:scale-105">
-                Contáctame para empezar tu proyecto 🚀
-            </a>
+
+        <style>
+            .skills-container {
+                perspective: 1000px;
+            }
+
+            .skill-card {
+                background-size: cover;
+                background-position: center;
+                transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                position: relative;
+                min-height: 260px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 1rem;
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                transform-style: preserve-3d;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: all 0.3s ease;
+                position: relative;
+                overflow: hidden;
+                min-height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .skill-card::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(135deg, rgba(8, 47, 73, 0.95) 0%, rgba(4, 12, 24, 0.95) 100%);
+                transition: all 0.3s ease;
+                z-index: 1;
+                pointer-events: none;
+
+                mask-image: radial-gradient(circle 80px at var(--x, 50%) var(--y, 50%),
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 1) 80%);
+                -webkit-mask-image: radial-gradient(circle 80px at var(--x, 50%) var(--y, 50%),
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 1) 80%);
+                mask-mode: alpha;
+                mask-repeat: no-repeat;
+            }
+
+            .skill-card:hover {
+                transform: translateY(-8px) scale(1.02);
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+            }
+
+            .skill-card:hover::before {
+                background: rgba(17, 24, 39, 0.7);
+                backdrop-filter: blur(2px);
+            }
+
+            .skill-title {
+                position: relative;
+                z-index: 2;
+                text-align: center;
+                padding: 1rem;
+                transition: all 0.3s ease;
+            }
+
+            .skill-icon {
+                position: absolute;
+                top: 1.5rem;
+                right: 1.5rem;
+                font-size: 1.5rem;
+                color: rgba(103, 232, 249, 0.9);
+                transition: all 0.3s ease;
+                z-index: 2;
+            }
+
+            .skill-card:hover .skill-icon {
+                transform: scale(1.2) rotate(5deg);
+                color: #67e8f9;
+            }
+
+            .skill-border {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 2px solid transparent;
+                border-radius: 1rem;
+                background: linear-gradient(135deg, rgba(56, 189, 248, 0.5) 0%, rgba(99, 102, 241, 0.5) 100%) border-box;
+                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: destination-out;
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                pointer-events: none;
+            }
+
+            .skill-card:hover .skill-title {
+                transform: translateY(-10px);
+            }
+        </style>
+
+        <div class="skills-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 z-10 w-full max-w-7xl px-6">
+            <div class="skill-card group" style="background-image: url('./img/group.webp')">
+                <h3 class="skill-title text-xl font-semibold text-cyan-300">Trabajo Colaborativo</h3>
+                <div class="skill-border"></div>
+            </div>
+
+            <div class="skill-card group" style="background-image: url('./img/clean-code.webp')">
+                <i class="fas fa-code skill-icon"></i>
+                <h3 class="skill-title text-cyan-300">Código Limpio</h3>
+                <div class="skill-border"></div>
+            </div>
+
+            <div class="skill-card group" style="background-image: url('./img/fast-code.jpg')">
+                <i class="fas fa-bolt skill-icon"></i>
+                <h3 class="skill-title text-cyan-300">Desarrollo Rápido</h3>
+                <div class="skill-border"></div>
+            </div>
+
+            <div class="skill-card group" style="background-image: url('./img/uxix.avif')">
+                <i class="fas fa-paint-brush skill-icon"></i>
+                <h3 class="skill-title text-cyan-300">Creatividad Técnica</h3>
+                <div class="skill-border"></div>
+            </div>
+
+            <div class="skill-card group" style="background-image: url('./img/problems.png')">
+                <i class="fas fa-lightbulb skill-icon"></i>
+                <h3 class="skill-title text-cyan-300">Resolución de Problemas</h3>
+                <div class="skill-border"></div>
+            </div>
+
+            <div class="skill-card group" style="background-image: url('./img/database.jpeg')">
+                <i class="fas fa-database skill-icon"></i>
+                <h3 class="skill-title text-cyan-300">Bases de Datos</h3>
+                <div class="skill-border"></div>
+            </div>
+        </div>
+
+        <div class="mt-14 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent animate-pulse">
         </div>
     </section>
 
-
-
-
-
-
-    <!---->
     <section id="portafolio" class="py-16 bg-black text-white portafolio" data-aos="fade-up">
-        <div class="text-center mb-12">
-            <span class="uppercase text-sm tracking-widest text-green-400">Mi trabajo</span>
-            <h2
-                class="text-4xl font-bold bg-gradient-to-r from-indigo-400 via-green-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
-                Últimos proyectos
-            </h2>
+        <div class="max-w-6xl mx-auto mb-20 px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="text-center md:text-left flex-1">
+                    <div class="text-sm uppercase text-cyan-400 tracking-widest">> Portafolio</div>
+                    <h2
+                        class="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-transparent bg-clip-text drop-shadow-sm">
+                        Últimos proyectos
+                    </h2>
+                    <p class="mt-4 text-gray-300 text-lg md:text-xl font-mono max-w-xl leading-relaxed">
+                        Te muestro algunos de mis proyectos más destacados y que me han permitido demostrar mis
+                        habilidades técnicas y creativas.
+                    </p>
+                </div>
+
+                <div class="relative flex-shrink-0">
+                    <img src="img/key.png" alt="Avatar"
+                        class="w-40 md:w-56 lg:w-64 drop-shadow-xl transition-transform duration-300 hover:scale-105" />
+                    <div
+                        class="absolute w-40 h-40 md:w-56 md:h-56 rounded-full bg-cyan-500 blur-3xl opacity-20 -z-10 top-3 left-3">
+                    </div>
+                </div>
+
+            </div>
         </div>
 
+
         <div id="portafolio" class="container mx-auto px-6">
-            <div class="flex justify-center mb-8 space-x-4">
-                <button data-filter="all"
-                    class="filter-btn px-4 py-2 bg-gray-800 rounded-full hover:bg-gray-500 shadow-x1 transition">Todo</button>
-                <button data-filter="destacados"
-                    class="filter-btn px-4 py-2 bg-gray-800 rounded-full hover:bg-gray-500 shadow-x1 transition">Destacados</button>
-                <button data-filter="react"
-                    class="filter-btn px-4 py-2 bg-gray-800 rounded-full hover:bg-gray-500 shadow-x1 transition">React</button>
-                <button data-filter="node"
-                    class="filter-btn px-4 py-2 bg-gray-800 rounded-full hover:bg-gray-500 shadow-x1 transition">Node</button>
-                <button data-filter="css"
-                    class="filter-btn px-4 py-2 bg-gray-800 rounded-full hover:bg-gray-500 shadow-x1 transition">CSS
-                    &
-                    SASS</button>
+            <div class="flex flex-wrap justify-center gap-6 py-10">
+                <div class="flex flex-wrap gap-3">
+                    <button type="button"
+                        class="filter-btn btn-all bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
+                        data-filter="all">
+                        <i class="fas fa-layer-group mr-2"></i>
+                        <span>Todo</span>
+                    </button>
+
+                    <button type="button"
+                        class="filter-btn btn-featured bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
+                        data-filter="destacados">
+                        <i class="fas fa-star mr-2"></i>
+                        <span>Destacados</span>
+                    </button>
+
+                    <button type="button"
+                        class="filter-btn btn-react bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
+                        data-filter="react">
+                        <i class="fab fa-react mr-2"></i>
+                        <span>React</span>
+                    </button>
+
+                    <button type="button"
+                        class="filter-btn btn-node bg-gradient-to-r from-green-600 to-emerald-500 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
+                        data-filter="node">
+                        <i class="fab fa-node-js mr-2"></i>
+                        <span>Node.js</span>
+                    </button>
+
+                    <button type="button"
+                        class="filter-btn btn-css bg-gradient-to-r from-pink-500 to-rose-500 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
+                        data-filter="css">
+                        <i class="fab fa-css3-alt mr-2"></i>
+                        <span>CSS & SASS</span>
+                    </button>
+                </div>
+
             </div>
 
             <div class="container mx-auto px-6">
@@ -473,7 +626,7 @@
                             <div class="mb-4">
                                 <p class="text-sm text-gray-300 mb-2">
                                 <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Alimentar Panificadoras</p>
-                                    <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-3 w-10">
                                         <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
                                             class="w-6 h-6 object-contain bg-white rounded-full p-1">
                                         <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
@@ -498,7 +651,7 @@
                             <div class="mb-4">
                                 <p class="text-sm text-gray-300 mb-2">
                                 <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Cofi</p>
-                                    <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-3 w-10">
                                         <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
                                             class="w-6 h-6 object-contain bg-white rounded-full p-1">
                                         <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
@@ -649,9 +802,6 @@
                             </a>
                         </div>
                     </div>
-
-                    <!-- OTROS -->
-
                     <div data-category="todos css node scss"
                         class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
                         <img src="img/mvcq25.png" alt="MVCQ"
@@ -805,16 +955,65 @@
     </section> -->
 
     <!---->
-    <footer>
-        <p class="scroll-scale">Copyright &copy; 2023 by Nico Romero. Todos los derechos reservados</p>
+    <footer class="mt-1">
+        <p class="scroll-scale text-white">Copyright &copy; 2023 by Nico Romero. Todos los derechos reservados</p>
         <a href="#about"><i class='bx bx-up-arrow-alt'></i></a>
     </footer>
 
+    <script type="module">
+        import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 400, 0.1, 1000);
+        camera.position.z = 5;
+
+        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("three-bg"), alpha: true });
+        renderer.setSize(window.innerWidth, 400);
+        renderer.setPixelRatio(window.devicePixelRatio);
+
+        // Partículas
+        const particleCount = 300;
+        const geometry = new THREE.BufferGeometry();
+        const positions = [];
+
+        for (let i = 0; i < particleCount; i++) {
+            positions.push((Math.random() - 0.5) * 10); // x
+            positions.push((Math.random() - 0.5) * 5);  // y
+            positions.push((Math.random() - 0.5) * 10); // z
+        }
+
+        geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+
+        const material = new THREE.PointsMaterial({
+            color: 0x00ffff,
+            size: 0.05,
+            transparent: true,
+            opacity: 0.6,
+        });
+
+        const particles = new THREE.Points(geometry, material);
+        scene.add(particles);
+
+        // Animación
+        function animate() {
+            requestAnimationFrame(animate);
+            particles.rotation.y += 0.0008;
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, 400);
+            camera.aspect = window.innerWidth / 400;
+            camera.updateProjectionMatrix();
+        });
+    </script>
+    <!-- <script src="filters.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- <script src="mixitup.min.js"></script> -->
     <script src="script.js"></script>
 
 </body>
