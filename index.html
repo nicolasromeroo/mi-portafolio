@@ -20,9 +20,9 @@
         <div class="logo-glitch">Nicolás</div>
         <ul class="navlist">
             <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#portfolio">Portafolio</a></li>
             <li><a href="#experience">Experiencia</a></li>
             <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
             <li><a href="#about">Contacto</a></li>
         </ul>
         <div id="menu-icon" class="bx bx-menu"></div>
@@ -124,6 +124,698 @@
     </section>
 
 
+    <section id="portfolio" class="py-16 bg-black text-white portafolio" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto mb-20 px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="text-center md:text-left flex-1">
+                    <div class="text-sm uppercase text-cyan-400 tracking-widest">> Portafolio</div>
+                    <h2
+                        class="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-transparent bg-clip-text drop-shadow-sm">
+                        Últimos proyectos
+                    </h2>
+                    <p class="mt-4 text-gray-300 text-lg md:text-xl font-mono max-w-xl leading-relaxed">
+                        Te muestro algunos de mis proyectos más destacados y que me han permitido demostrar mis
+                        habilidades técnicas y creativas.
+                    </p>
+                </div>
+
+                <div class="relative flex-shrink-0">
+                    <img src="img/key.png" alt="Avatar"
+                        class="w-40 md:w-56 lg:w-64 drop-shadow-xl transition-transform duration-300 hover:scale-105" />
+                    <div
+                        class="absolute w-40 h-40 md:w-56 md:h-56 rounded-full bg-cyan-500 blur-3xl opacity-20 -z-10 top-3 left-3">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[200px]">
+                <!-- Proyecto Grande -->
+                <div class="project-card row-span-2 group relative overflow-hidden rounded-2xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50"
+                    data-category="destacados fullstack">
+                    <img src="/img/fs/dash.png" alt="Futbol Sport"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:brightness-50" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Futbol Sport <span
+                                    class="text-sm text-gray-400">(versión 2025)</span></h3>
+                            <p class="text-sm text-gray-300 mb-4">Una plataforma completa para gestión deportiva</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-cyan-500/20 text-cyan-300 text-xs rounded-full">React</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded-full">Node.js</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-gray-300 text-xs rounded-full">Express</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-green-200 text-xs rounded-full">MongoDB</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-red-300 text-xs rounded-full">JWT</span>
+                                <span
+                                    class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">SocketIO</span>
+                                <span class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded-full">APIs
+                                    Development</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-gray-300 text-xs rounded-full">JOI</span>
+                                <span class="px-2 py-1 bg-green-500/20 text-green-200 text-xs rounded-full">Jest</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-red-300 text-xs rounded-full">Axios</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7355667114189291521/"
+                                    target="_blank" class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fab fa-linkedin text-lg"><span class="text-yellow-500 bold text-2xl">
+                                            !</span></i>
+                                </a>
+                                <!-- <a href=" #" class="text-white hover:text-cyan-400 transition-colors">
+                                            <i class="fab fa-github text-lg"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fas fa-external-link-alt text-lg"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto Normal -->
+                <div class="project-card group relative overflow-hidden rounded-2xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50"
+                    data-category="frontend">
+                    <img src="/img/vanguardia.png" alt="Vanguardia"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:brightness-50" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-lg font-bold text-white mb-2">Vanguardia M&S - Landing</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="px-2 py-1 bg-blue-500/20 text-yellow-300 text-xs rounded-full">javascript</span>
+                                <span class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">CSS</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded-full">Node.js</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-gray-300 text-xs rounded-full">Express</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-green-200 text-xs rounded-full">MongoDB</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-red-300 text-xs rounded-full">JWT</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://github.com/nicolasromeroo/vanguardia-sdb" target="_blank"
+                                    class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fab fa-github text-lg"></i>
+                                </a>
+                                <a href="https://nicolasromeroo.github.io/vanguardia-sdb/" target="_blank"
+                                    class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fas fa-external-link-alt text-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card group relative overflow-hidden rounded-2xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50"
+                    data-category="frontend">
+                    <img src="/img/inventario.png" alt="Inventario"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:brightness-50" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-lg font-bold text-white mb-2">Vanguardia M&S - Inventario</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="px-2 py-1 bg-blue-500/20 text-yellow-300 text-xs rounded-full">javascript</span>
+                                <span class="px-2 py-1 bg-purple-500/20 text-purple-100 text-xs rounded-full">CSS</span>
+                                <span
+                                    class="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded-full">Bootstrap</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">React</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded-full">Node.js</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-gray-300 text-xs rounded-full">Express</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-green-200 text-xs rounded-full">MongoDB</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://github.com/nicolasromeroo/inventario" target="_blank"
+                                    class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fab fa-github text-lg"></i>
+                                </a>
+                                <a href="https://inventario-kohl.vercel.app/" target="_blank"
+                                    class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fas fa-external-link-alt text-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card group relative overflow-hidden rounded-2xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50"
+                    data-category="frontend">
+                    <img src="/img/mvcq25.png" alt="MeVisto ComoQuiero"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:brightness-50" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-lg font-bold text-white mb-2">MeVisto ComoQuiero</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">SASS</span>
+                                <span
+                                    class="px-2 py-1 bg-blue-500/20 text-yellow-300 text-xs rounded-full">javascript</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded-full">Node.js</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-gray-300 text-xs rounded-full">Express</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-green-200 text-xs rounded-full">MongoDB</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-red-300 text-xs rounded-full">JWT</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://github.com/nicolasromeroo/MevistoComoquiero" target="_blank"
+                                    class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fab fa-github text-lg"></i>
+                                </a>
+                                <a href="https://mevisto-comoquiero.vercel.app/" target="_blank"
+                                    class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fas fa-external-link-alt text-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card group relative overflow-hidden rounded-2xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50"
+                    data-category="frontend">
+                    <img src="/img/goodMates.png" alt="Good Mates"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:brightness-50" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-lg font-bold text-white mb-2">Good Mates</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="px-2 py-1 bg-blue-500/20 text-yellow-300 text-xs rounded-full">javascript</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded-full">Node.js</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-gray-300 text-xs rounded-full">Express</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-green-200 text-xs rounded-full">MongoDB</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-red-300 text-xs rounded-full">JWT</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="#" class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fab fa-github text-lg"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fas fa-external-link-alt text-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card group relative overflow-hidden rounded-2xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50"
+                    data-category="frontend">
+                    <img src="/img/cofi-.png" alt="Cofi"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:brightness-50" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-lg font-bold text-white mb-2">Cofi</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">HTML</span>
+                                <span class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">CSS</span>
+                                <span class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Grid
+                                    System</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="#" class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fab fa-github text-lg"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fas fa-external-link-alt text-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card row-span-1 col-span-2 group relative overflow-hidden rounded-2xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50"
+                    data-category="destacados fullstack">
+                    <img src="/img/f1app.png" alt="F1 WEB"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:brightness-50" />
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-xl font-bold text-white mt-5">F1 WEB</h3>
+                            <p class="text-sm text-gray-300 mt-3">Sitio web de Fórmula 1</p>
+                            <div class="flex flex-wrap gap-2 mb-4 bg-dark-800 p-2 rounded-lg">
+                                <span
+                                    class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">Bootstrap</span>
+                                <span class="px-2 py-1 bg-cyan-500/20 text-cyan-300 text-xs rounded-full">React</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded-full">Node.js</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-gray-300 text-xs rounded-full">Express</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-green-200 text-xs rounded-full">MongoDB</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-red-300 text-xs rounded-full">JWT</span>
+                                <span
+                                    class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">SocketIO</span>
+                                <span class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded-full">APIs
+                                    Development</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-gray-300 text-xs rounded-full">JOI</span>
+                                <span
+                                    class="px-2 py-1 bg-green-500/20 text-red-200 text-xs rounded-full">Supertest</span>
+                                <span class="px-2 py-1 bg-blue-500/20 text-blue-200 text-xs rounded-full">Axios</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://github.com/nicolasromeroo/f1-web" target="_blank"
+                                    class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fab fa-github text-lg"></i>
+                                </a>
+                                <!-- <a href="https://f1-web.vercel.app/" target="_blank"
+                                    class="text-white hover:text-cyan-400 transition-colors">
+                                    <i class="fas fa-external-link-alt text-lg"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Paginación -->
+            <!-- <div class="flex justify-center items-center gap-4 mt-12">
+                    <button
+                        class="pagination-btn bg-slate-800/50 text-white px-4 py-2 rounded-lg hover:bg-cyan-500/20 transition-colors"
+                        id="prev-page">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <span class="text-white" id="page-info">Página 1 de 3</span>
+                    <button
+                        class="pagination-btn bg-slate-800/50 text-white px-4 py-2 rounded-lg hover:bg-cyan-500/20 transition-colors"
+                        id="next-page">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div> -->
+        </div>
+
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center items-center gap-4 mt-12">
+                <p class="text-sm uppercase text-cyan-300 tracking-widest">> Más proyectos</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 py-10">
+                <div class="flex flex-wrap gap-3">
+                    <button type="button"
+                        class="filter-btn btn-all bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
+                        data-filter="all">
+                        <i class="fas fa-layer-group mr-2"></i>
+                        <span>Todo</span>
+                    </button>
+
+                    <button type="button"
+                        class="filter-btn btn-featured bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
+                        data-filter="destacados">
+                        <i class="fas fa-star mr-2"></i>
+                        <span>Destacados</span>
+                    </button>
+
+                    <button type="button"
+                        class="filter-btn btn-react bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
+                        data-filter="react">
+                        <i class="fab fa-react mr-2"></i>
+                        <span>React</span>
+                    </button>
+
+                    <button type="button"
+                        class="filter-btn btn-node bg-gradient-to-r from-green-600 to-emerald-500 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
+                        data-filter="node">
+                        <i class="fab fa-node-js mr-2"></i>
+                        <span>Node.js</span>
+                    </button>
+
+                    <button type="button"
+                        class="filter-btn btn-css bg-gradient-to-r from-pink-500 to-rose-500 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
+                        data-filter="css">
+                        <i class="fab fa-css3-alt mr-2"></i>
+                        <span>CSS & SASS</span>
+                    </button>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="container mx-auto px-6">
+                <div class="relative flex space-x-[-100px]">
+                    <div data-category="todos css"
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/alimentar-.png" alt="Alimentar Panificadoras"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Alimentar Panificadoras</p>
+                                    <div class="flex items-center gap-3 w-10">
+                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    </div>
+                            </div>
+
+                            <a href="https://nicolasromeroo.github.io/alimentar/" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- <div data-category="todos css"
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/cofi-.png" alt="Cofi"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Cofi</p>
+                                    <div class="flex items-center gap-3 w-10">
+                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/cofi" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div> -->
+
+                    <div data-category="todos css"
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/futbolSport.png" alt="Futbol Sport"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Futbol Sport
+                                    </p>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/Futbol-Sport" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- <div data-category="todos css node"
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/goodMates.png" alt="Good Mates"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Good Mates</p>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
+                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/Good-Mates" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div> -->
+
+                    <div data-category="todos react destacados"
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/specialTravel-.png" alt="Special Travel"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Special Travel</h3>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1" />
+                                </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/special-travel" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- <div data-category="todos css node destacados"
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/vanguardia.png" alt="Vanguardia"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Vanguardia SDB - Landing
+                                </h3>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/vanguardia-sdb" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div> -->
+
+                    <div data-category="todos destacados node"
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/app-chat.png" alt="AppChat Websockets"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">App chat con Websockets</h3>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/aplicacionChatWebsockets" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- <div data-category="todos css node scss"
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/mvcq25.png" alt="MVCQ"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Me Visto Como Quiero</h3>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.simpleicons.org/sass/CC6699" alt="SASS"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/MevistoComoquiero" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div> -->
+
+                    <div data-category="todos react node destacados"
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/gastos.png" alt=" Gestor de gastos"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Gestor de gastos</h3>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1" />
+                                    <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/gestor-gastos" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- <div data-category="todos react node destacados"
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/f1app.png" alt="f1-web"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">F1 WEB</h3>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1" />
+                                    <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/f1-web" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div> -->
+
+                    <!-- <div data-category="todos react node destacados"
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/inventario.png" alt="f1-web"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Vanguardia SDB - Inventario
+                                </h3>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1" />
+                                    <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                </div>
+                            </div>
+
+                            <a href="https://github.com/nicolasromeroo/inventario" target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
+                            </a>
+                        </div>
+                    </div>
+
+                    <div data-category="todos react node destacados"
+                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
+                        <img src="img/fs/dash.png" alt="f1-web"
+                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
+                        <div
+                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
+
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-300 mb-2">
+                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Futbol Sport 2025</h3>
+                                <p class="text-gray-400 text-sm mb-2">Proyecto en desarrollo</p>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                    <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1" />
+                                    <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"
+                                        class="w-6 h-6 object-contain bg-white rounded-full p-1">
+                                </div>
+                            </div>
+
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7355667114189291521/"
+                                target="_blank"
+                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
+                                <i class='bx bx-link-external text-2xl mr-2'></i> Reseña
+                            </a>
+                        </div>
+                    </div>
+
+                </div> -->
+
+                </div>
+            </div>
+    </section>
+
     <section class="relative py-20 bg-black text-white font-mono overflow-hidden" id="experience" data-aos="fade-up">
         <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#0ff_1px,transparent_1px)] bg-[length:20px_20px]">
         </div>
@@ -210,6 +902,12 @@
                         <li class="flex items-center gap-5"><img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
                                 class="w-5 h-5" />Material UI</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                class="w-5 h-5" />Figma</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketch/sketch-original.svg"
+                                class="w-5 h-5" />Sketch</li>
                     </ul>
                 </div>
 
@@ -251,6 +949,9 @@
                         <li class="flex items-center gap-5"><img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg"
                                 class="w-5 h-5" />Firebase</li>
+                        <li class="flex items-center gap-5"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+                                class="w-5 h-5" />SQL</li>
                     </ul>
                 </div>
 
@@ -403,431 +1104,140 @@
         </div>
 
         <div class="skills-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 z-10 w-full max-w-7xl px-6">
-            <div class="skill-card group" style="background-image: url('./img/group.webp')">
-                <h3 class="skill-title text-xl font-semibold text-cyan-300">Trabajo Colaborativo</h3>
-                <div class="skill-border"></div>
-            </div>
-
-            <div class="skill-card group" style="background-image: url('./img/clean-code.webp')">
-                <i class="fas fa-code skill-icon"></i>
-                <h3 class="skill-title text-cyan-300">Código Limpio</h3>
-                <div class="skill-border"></div>
-            </div>
-
-            <div class="skill-card group" style="background-image: url('./img/fast-code.jpg')">
-                <i class="fas fa-bolt skill-icon"></i>
-                <h3 class="skill-title text-cyan-300">Desarrollo Rápido</h3>
-                <div class="skill-border"></div>
-            </div>
-
-            <div class="skill-card group" style="background-image: url('./img/uxix.avif')">
-                <i class="fas fa-paint-brush skill-icon"></i>
-                <h3 class="skill-title text-cyan-300">Creatividad Técnica</h3>
-                <div class="skill-border"></div>
-            </div>
-
-            <div class="skill-card group" style="background-image: url('./img/problems.png')">
-                <i class="fas fa-lightbulb skill-icon"></i>
-                <h3 class="skill-title text-cyan-300">Resolución de Problemas</h3>
-                <div class="skill-border"></div>
-            </div>
-
-            <div class="skill-card group" style="background-image: url('./img/database.jpeg')">
-                <i class="fas fa-database skill-icon"></i>
-                <h3 class="skill-title text-cyan-300">Bases de Datos</h3>
-                <div class="skill-border"></div>
-            </div>
-        </div>
-
-        <div class="mt-14 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent animate-pulse">
-        </div>
-    </section>
-
-    <section id="portafolio" class="py-16 bg-black text-white portafolio" data-aos="fade-up">
-        <div class="max-w-6xl mx-auto mb-20 px-6">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
-                <div class="text-center md:text-left flex-1">
-                    <div class="text-sm uppercase text-cyan-400 tracking-widest">> Portafolio</div>
-                    <h2
-                        class="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-transparent bg-clip-text drop-shadow-sm">
-                        Últimos proyectos
-                    </h2>
-                    <p class="mt-4 text-gray-300 text-lg md:text-xl font-mono max-w-xl leading-relaxed">
-                        Te muestro algunos de mis proyectos más destacados y que me han permitido demostrar mis
-                        habilidades técnicas y creativas.
+            <div class="group relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 p-1">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
+                </div>
+                <div
+                    class="absolute inset-0 blur-xl bg-gradient-to-r from-cyan-500 to-blue-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
+                </div>
+                <div class="relative bg-slate-900 rounded-xl p-6 h-full flex flex-col">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="relative">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg blur opacity-40">
+                            </div>
+                            <div class="relative w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center">
+                                <i class="fas fa-code text-2xl text-cyan-400"></i>
+                            </div>
+                        </div>
+                        <h3
+                            class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                            Desarrollo Full Stack
+                        </h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6">
+                        Soluciones web completas usando el stack MERN y las últimas tecnologías.
                     </p>
-                </div>
-
-                <div class="relative flex-shrink-0">
-                    <img src="img/key.png" alt="Avatar"
-                        class="w-40 md:w-56 lg:w-64 drop-shadow-xl transition-transform duration-300 hover:scale-105" />
-                    <div
-                        class="absolute w-40 h-40 md:w-56 md:h-56 rounded-full bg-cyan-500 blur-3xl opacity-20 -z-10 top-3 left-3">
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span
+                            class="px-3 py-1 bg-cyan-500/5 border border-cyan-500/10 text-cyan-400 text-xs rounded-full">MongoDB</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-500/5 border border-cyan-500/10 text-cyan-400 text-xs rounded-full">Express</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-500/5 border border-cyan-500/10 text-cyan-400 text-xs rounded-full">React</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-500/5 border border-cyan-500/10 text-cyan-400 text-xs rounded-full">Node.js</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-500/5 border border-cyan-500/10 text-cyan-400 text-xs rounded-full">Testing</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-500/5 border border-cyan-500/10 text-cyan-400 text-xs rounded-full">Documentación</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-500/5 border border-cyan-500/10 text-cyan-400 text-xs rounded-full">Despliegue</span>
                     </div>
                 </div>
+            </div>
 
+            <div class="group relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 p-1">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
+                </div>
+                <div
+                    class="absolute inset-0 blur-xl bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
+                </div>
+                <div class="relative bg-slate-900 rounded-xl p-6 h-full flex flex-col">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="relative">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg blur opacity-40">
+                            </div>
+                            <div class="relative w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center">
+                                <i class="fas fa-paint-brush text-2xl text-purple-400"></i>
+                            </div>
+                        </div>
+                        <h3
+                            class="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                            Diseño UI/UX
+                        </h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6">
+                        Interfaces modernas y responsivas con enfoque en la experiencia de usuario.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span
+                            class="px-3 py-1 bg-purple-500/5 border border-purple-500/10 text-purple-400 text-xs rounded-full">Responsive
+                            Design</span>
+                        <span
+                            class="px-3 py-1 bg-purple-500/5 border border-purple-500/10 text-purple-400 text-xs rounded-full">Material
+                            UI</span>
+                        <span
+                            class="px-3 py-1 bg-purple-500/5 border border-purple-500/10 text-purple-400 text-xs rounded-full">Bootstrap</span>
+                        <span
+                            class="px-3 py-1 bg-purple-500/5 border border-purple-500/10 text-purple-400 text-xs rounded-full">TailwindCSS</span>
+                        <span
+                            class="px-3 py-1 bg-purple-500/5 border border-purple-500/10 text-purple-400 text-xs rounded-full">Figma</span>
+                        <span
+                            class="px-3 py-1 bg-purple-500/5 border border-purple-500/10 text-purple-400 text-xs rounded-full">Sketch</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 p-1">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-emerald-500 to-green-500 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
+                </div>
+                <div
+                    class="absolute inset-0 blur-xl bg-gradient-to-r from-emerald-500 to-green-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
+                </div>
+                <div class="relative bg-slate-900 rounded-xl p-6 h-full flex flex-col">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="relative">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-emerald-500 to-green-500 rounded-lg blur opacity-40">
+                            </div>
+                            <div class="relative w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center">
+                                <i class="fas fa-server text-2xl text-emerald-400"></i>
+                            </div>
+                        </div>
+                        <h3
+                            class="text-xl font-bold bg-gradient-to-r from-emerald-400 to-green-400 bg-clip-text text-transparent">
+                            Backend & APIs
+                        </h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6">
+                        Desarrollo de APIs robustas y servicios backend escalables.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span
+                            class="px-3 py-1 bg-emerald-500/5 border border-emerald-500/10 text-emerald-400 text-xs rounded-full">APIs
+                            development</span>
+                        <span
+                            class="px-3 py-1 bg-emerald-500/5 border border-emerald-500/10 text-emerald-400 text-xs rounded-full">CRUD
+                            operations</span>
+                        <span
+                            class="px-3 py-1 bg-emerald-500/5 border border-emerald-500/10 text-emerald-400 text-xs rounded-full">
+                            Authentication</span>
+                        <span
+                            class="px-3 py-1 bg-emerald-500/5 border border-emerald-500/10 text-emerald-400 text-xs rounded-full">
+                            Hashing</span>
+                    </div>
+                </div>
             </div>
         </div>
 
-
-        <div id="portafolio" class="container mx-auto px-6">
-            <div class="flex flex-wrap justify-center gap-6 py-10">
-                <div class="flex flex-wrap gap-3">
-                    <button type="button"
-                        class="filter-btn btn-all bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
-                        data-filter="all">
-                        <i class="fas fa-layer-group mr-2"></i>
-                        <span>Todo</span>
-                    </button>
-
-                    <button type="button"
-                        class="filter-btn btn-featured bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
-                        data-filter="destacados">
-                        <i class="fas fa-star mr-2"></i>
-                        <span>Destacados</span>
-                    </button>
-
-                    <button type="button"
-                        class="filter-btn btn-react bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
-                        data-filter="react">
-                        <i class="fab fa-react mr-2"></i>
-                        <span>React</span>
-                    </button>
-
-                    <button type="button"
-                        class="filter-btn btn-node bg-gradient-to-r from-green-600 to-emerald-500 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
-                        data-filter="node">
-                        <i class="fab fa-node-js mr-2"></i>
-                        <span>Node.js</span>
-                    </button>
-
-                    <button type="button"
-                        class="filter-btn btn-css bg-gradient-to-r from-pink-500 to-rose-500 text-white px-5 py-2.5 rounded-xl text-base sm:text-lg font-semibold shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300"
-                        data-filter="css">
-                        <i class="fab fa-css3-alt mr-2"></i>
-                        <span>CSS & SASS</span>
-                    </button>
-                </div>
-
-            </div>
-
-            <div class="container mx-auto px-6">
-                <div class="relative flex space-x-[-100px]">
-                    <div data-category="todos css"
-                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
-                        <img src="img/alimentar-.png" alt="Alimentar Panificadoras"
-                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
-                        <div
-                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
-
-                            <div class="mb-4">
-                                <p class="text-sm text-gray-300 mb-2">
-                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Alimentar Panificadoras</p>
-                                    <div class="flex items-center gap-3 w-10">
-                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                    </div>
-                            </div>
-
-                            <a href="https://nicolasromeroo.github.io/alimentar/" target="_blank"
-                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
-                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
-                            </a>
-                        </div>
-                    </div>
-
-                    <div data-category="todos css"
-                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
-                        <img src="img/cofi-.png" alt="Cofi"
-                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
-                        <div
-                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
-
-                            <div class="mb-4">
-                                <p class="text-sm text-gray-300 mb-2">
-                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Cofi</p>
-                                    <div class="flex items-center gap-3 w-10">
-                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                    </div>
-                            </div>
-
-                            <a href="https://github.com/nicolasromeroo/cofi" target="_blank"
-                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
-                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
-                            </a>
-                        </div>
-                    </div>
-
-                    <div data-category="todos css"
-                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
-                        <img src="img/futbolSport.png" alt="Futbol Sport"
-                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
-                        <div
-                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
-
-                            <div class="mb-4">
-                                <p class="text-sm text-gray-300 mb-2">
-                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Futbol Sport - juego de azar
-                                    </p>
-                                    <div class="flex items-center gap-3">
-                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                    </div>
-                            </div>
-
-                            <a href="https://github.com/nicolasromeroo/Futbol-Sport" target="_blank"
-                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
-                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
-                            </a>
-                        </div>
-                    </div>
-
-                    <div data-category="todos css node"
-                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
-                        <img src="img/goodMates.png" alt="Good Mates"
-                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
-                        <div
-                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
-
-                            <div class="mb-4">
-                                <p class="text-sm text-gray-300 mb-2">
-                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Good Mates</p>
-                                    <div class="flex items-center gap-3">
-                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                    </div>
-                            </div>
-
-                            <a href="https://github.com/nicolasromeroo/Good-Mates" target="_blank"
-                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
-                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
-                            </a>
-                        </div>
-                    </div>
-                    <div data-category="todos react destacados"
-                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
-                        <img src="img/specialTravel-.png" alt="Special Travel"
-                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
-                        <div
-                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
-
-                            <div class="mb-4">
-                                <p class="text-sm text-gray-300 mb-2">
-                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Special Travel</p>
-                                    <div class="flex items-center gap-3">
-                                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1" />
-                                    </div>
-                            </div>
-
-                            <a href="https://github.com/nicolasromeroo/special-travel" target="_blank"
-                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
-                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
-                            </a>
-                        </div>
-                    </div>
-
-                    <div data-category="todos css node destacados"
-                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
-                        <img src="img/vanguardia.png" alt="Vanguardia"
-                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
-                        <div
-                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
-
-                            <div class="mb-4">
-                                <p class="text-sm text-gray-300 mb-2">
-                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Vanguardia SDB</p>
-                                    <div class="flex items-center gap-3">
-                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                    </div>
-                            </div>
-
-                            <a href="https://github.com/nicolasromeroo/vanguardia-sdb" target="_blank"
-                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
-                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
-                            </a>
-                        </div>
-                    </div>
-
-                    <div data-category="todos destacados node"
-                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
-                        <img src="img/app-chat.png" alt="AppChat Websockets"
-                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
-                        <div
-                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
-
-                            <div class="mb-4">
-                                <p class="text-sm text-gray-300 mb-2">
-                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">App chat con Websockets</p>
-                                    <div class="flex items-center gap-3">
-                                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                    </div>
-                            </div>
-
-                            <a href="https://github.com/nicolasromeroo/aplicacionChatWebsockets" target="_blank"
-                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
-                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
-                            </a>
-                        </div>
-                    </div>
-                    <div data-category="todos css node scss"
-                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
-                        <img src="img/mvcq25.png" alt="MVCQ"
-                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
-                        <div
-                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
-
-                            <div class="mb-4">
-                                <p class="text-sm text-gray-300 mb-2">
-                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Me Visto Como Quiero</p>
-                                    <div class="flex items-center gap-3">
-                                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/sass/CC6699" alt="SASS"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1" />
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                    </div>
-                            </div>
-
-                            <a href="https://github.com/nicolasromeroo/MevistoComoquiero" target="_blank"
-                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
-                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
-                            </a>
-                        </div>
-                    </div>
-
-                    <div data-category="todos react node destacados"
-                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
-                        <img src="img/gastos.png" alt=" Gestor de gastos"
-                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
-                        <div
-                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
-
-                            <div class="mb-4">
-                                <p class="text-sm text-gray-300 mb-2">
-                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">Gestor de gastos</p>
-                                    <div class="flex items-center gap-3">
-                                        <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1" />
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1" />
-                                        <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                    </div>
-                            </div>
-
-                            <a href="https://github.com/nicolasromeroo/gestor-gastos" target="_blank"
-                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
-                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
-                            </a>
-                        </div>
-                    </div>
-
-                    <div data-category="todos react node destacados"
-                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
-                        <img src="img/f1app.png" alt="f1-web"
-                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
-                        <div
-                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
-
-                            <div class="mb-4">
-                                <p class="text-sm text-gray-300 mb-2">
-                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">F1 WEB</p>
-                                    <div class="flex items-center gap-3">
-                                        <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1" />
-                                        <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                    </div>
-                            </div>
-
-                            <a href="https://github.com/nicolasromeroo/f1-web" target="_blank"
-                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
-                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
-                            </a>
-                        </div>
-                    </div>
-
-                    <div data-category="todos react node destacados"
-                        class="card relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-green-400/60 transition duration-500 transform hover:translate-y-9 cursor-pointer">
-                        <img src="img/inventario.png" alt="f1-web"
-                            class="w-full h-60 object-cover rounded-[25px] transform group-hover:scale-10 transition duration-500" />
-                        <div
-                            class="description hidden absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent backdrop-blur-sm transition duration-500 flex flex-col justify-end p-6">
-
-                            <div class="mb-4">
-                                <p class="text-sm text-gray-300 mb-2">
-                                <h3 class="text-xl font-bold text-green-400 mb-2 alimentar">INVENTARIO</p>
-                                    <div class="flex items-center gap-3">
-                                        <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                        <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1" />
-                                        <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"
-                                            class="w-6 h-6 object-contain bg-white rounded-full p-1">
-                                    </div>
-                            </div>
-
-                            <a href="https://github.com/nicolasromeroo/inventario" target="_blank"
-                                class="inline-flex items-center text-green-400 hover:text-cyan-400 transition">
-                                <i class='bx bx-link-external text-2xl mr-2'></i> Ver más
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
     </section>
+
+
 
     <!-- contacto -->
     <!-- <section id="contact" class="contact" data-aos="fade-up">
@@ -852,9 +1262,90 @@
     </section> -->
 
     <!---->
-    <footer class="mt-1">
-        <p class="scroll-scale text-white">Copyright &copy; 2023 by Nico Romero. Todos los derechos reservados</p>
-        <a href="#about"><i class='bx bx-up-arrow-alt'></i></a>
+    <footer class="bg-gradient-to-b from-gray-900 to-black text-gray-300 font-mono">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 border-b border-gray-800 pb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h3
+                        class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">
+                        Nicolás Emiliano Romero
+                    </h3>
+                    <div class="flex items-center mb-4">
+                        <img src="img/yo.jpg" alt="Avatar"
+                            class="w-16 h-16 rounded-full mr-4 border border-gray-700 shadow-lg">
+                        <p class="text-gray-400 text-sm">
+                            Full Stack Developer | <br> Pushing to Git, and pushing <span
+                                class="text-cyan-400">myself</span>.
+                        </p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/nicolasromeroo" target="_blank"
+                            class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nicromeroe/" target="_blank"
+                            class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nicoromeroooo/" target="_blank"
+                            class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Atajos -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Atajos</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="text-gray-400 hover:text-cyan-400 transition-colors">Sobre mí</a>
+                        </li>
+                        <li><a href="#portfolio"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors">Portafolio</a></li>
+                        <li><a href="#experience"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors">Experiencia</a></li>
+                        <li><a href="#skills"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors">Habilidades</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-envelope text-cyan-400"></i>
+                            <a href="mailto:nicolasdev290300@gmail.com"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors">
+                                nicromeroe@gmail.com
+                            </a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fab fa-whatsapp text-cyan-400"></i>
+                            <a href="https://api.whatsapp.com/send?phone=5493515559573"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors">
+                                +54 9 351 5559573
+                            </a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                            <span class="text-gray-400">Córdoba, Argentina</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-between pt-6 text-sm">
+                <p class="text-gray-500 mb-4 md:mb-0">
+                    &copy; Nicolás Emiliano Romero. Crafted with care — Constantly evolving since 2022 — All
+                    rights reserved.
+                </p>
+                <a href="#about"
+                    class="bg-gradient-to-r from-cyan-500 to-blue-500 p-2 rounded-full hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+                    <i class='bx bx-up-arrow-alt text-white text-xl'></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
     <script>
@@ -880,7 +1371,7 @@
         renderer.setSize(window.innerWidth, 400);
         renderer.setPixelRatio(window.devicePixelRatio);
 
-        // Partículas
+        // partículas 
         const particleCount = 300;
         const geometry = new THREE.BufferGeometry();
         const positions = [];
@@ -903,7 +1394,6 @@
         const particles = new THREE.Points(geometry, material);
         scene.add(particles);
 
-        // Animación
         function animate() {
             requestAnimationFrame(animate);
             particles.rotation.y += 0.0008;

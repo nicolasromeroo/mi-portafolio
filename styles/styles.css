@@ -1269,46 +1269,6 @@ path {
     font-size: 1rem;
 }
 
-footer {
-    width: 100%;
-    padding: 2rem 10%;
-    background: rgba(0, 0, 0, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-top: 1px solid rgba(18, 247, 255, 0.3);
-}
-
-footer p {
-    color: var(--hover-color);
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    text-shadow: 0 0 5px var(--hover-color), 0 0 10px var(--hover-color);
-    margin: 0;
-}
-
-footer a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--hover-color);
-    padding: 0.7rem;
-    border-radius: 50%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-footer a:hover {
-    transform: translateY(-5px) scale(1.1);
-    box-shadow: 0 0 20px rgba(18, 247, 255, 0.6);
-}
-
-footer a i {
-    font-size: 1.2rem;
-    color: #000;
-}
-
-
 /**/
 .scroll-scale {
     opacity: 0;
