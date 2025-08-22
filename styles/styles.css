@@ -399,6 +399,82 @@ body::before {
     color: white;
 }
 
+/* =============================
+   Modern Playing Card Theme
+   ============================= */
+.card-stack {
+    gap: 0;
+    justify-content: center;
+}
+
+.card-stack .playing-card {
+    width: 280px;
+    background: radial-gradient(120% 120% at 0% 0%, rgba(0,255,255,0.06), rgba(0,0,0,0.35)), rgba(17, 24, 39, 0.6);
+    border: 1px solid rgba(34, 211, 238, 0.25);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    transform: translateY(0) rotate(var(--tilt, 0deg));
+    transition: transform .35s ease, box-shadow .35s ease, filter .35s ease;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+/* Overlapped stack effect (like a fanned set of playing cards) */
+.card-stack .playing-card + .playing-card {
+    margin-left: -80px;
+}
+
+/* Subtle alternating tilt for variety */
+.card-stack .playing-card:nth-child(odd) { --tilt: -1.5deg; }
+.card-stack .playing-card:nth-child(even) { --tilt: 1.5deg; }
+
+/* Elevation on hover/focus */
+.card-stack .playing-card:hover,
+.card-stack .playing-card.z-50 {
+    transform: translateY(-12px) rotate(0deg) scale(1.015);
+    box-shadow: 0 18px 45px rgba(34, 211, 238, 0.15), 0 8px 18px rgba(0,0,0,0.45);
+    filter: drop-shadow(0 0 12px rgba(34, 211, 238, 0.15));
+}
+
+/* Top suit corner badges (optional, via data-attrs) */
+.playing-card::before,
+.playing-card::after {
+    content: attr(data-suit);
+    position: absolute;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: rgba(203, 213, 225, 0.9);
+    background: rgba(2, 132, 199, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    padding: 2px 6px;
+    border-radius: 8px;
+    letter-spacing: .06em;
+}
+.playing-card::before { top: 10px; left: 10px; }
+.playing-card::after { bottom: 10px; right: 10px; transform: rotate(180deg); }
+
+/* Image rounding consistent with card radius */
+.playing-card img { border-radius: 14px; }
+
+/* Description panel polish */
+.playing-card .description {
+    border-radius: 14px;
+}
+
+/* Small screens: remove overlap for better stacking */
+@media (max-width: 768px) {
+    .card-stack {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .card-stack .playing-card,
+    .card-stack .playing-card + .playing-card {
+        margin-left: 0;
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
 .skill-item img {
     width: 1.5rem;
     height: 1.5rem;
