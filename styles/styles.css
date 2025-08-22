@@ -399,6 +399,34 @@ body::before {
     color: white;
 }
 
+/* ==== Portfolio overlays: keep titles readable on hover ==== */
+.overlay-compact .overlay-title { z-index: 20; pointer-events: none; }
+.overlay-compact .overlay-body { z-index: 10; }
+.overlay-compact .overlay-body { padding-bottom: 84px; }
+.overlay-compact .overlay-body > h3,
+.overlay-compact .overlay-body > .flex.flex-wrap { /* chips row */
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity .25s ease, transform .25s ease;
+}
+.group:hover .overlay-compact .overlay-body > h3,
+.group:hover .overlay-compact .overlay-body > .flex.flex-wrap {
+    opacity: 1;
+    transform: translateY(0);
+}
+.overlay-compact .overlay-body .mb-4, /* badges */
+.overlay-compact .overlay-body .flex.gap-4 { /* action buttons */
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity .25s ease, transform .25s ease;
+}
+.group:hover .overlay-compact .overlay-body .mb-4,
+.group:hover .overlay-compact .overlay-body .flex.gap-4 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .05s;
+}
+
 /* =============================
    Modern Playing Card Theme
    ============================= */
