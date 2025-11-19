@@ -1,0 +1,93 @@
+/* Metrics & Code Grid Layout */
+.metrics-code-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.performance-dashboard-compact {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 255, 140, 0.3);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+}
+
+.metrics-console-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.code-terminal-compact {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 255, 140, 0.2);
+}
+
+.code-terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: rgba(0, 255, 140, 0.1);
+  border-bottom: 1px solid var(--accent);
+  font-size: 0.8rem;
+}
+
+.code-execution {
+  padding: 12px;
+}
+
+.code-prompt {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.code-output-compact {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.execution-status-compact {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: rgba(40, 202, 66, 0.1);
+  border: 1px solid rgba(40, 202, 66, 0.3);
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.status-message {
+  color: #28ca42;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .metrics-code-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,157 @@
+/* Live Metrics - Horizontal Layout */
+.live-metrics-compact {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(0, 255, 140, 0.2);
+}
+
+.metric-compact {
+  text-align: center;
+}
+
+.metric-value {
+  display: block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+
+.metric-label {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+/* Compact Footer */
+.compact-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px !important;
+  background: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(0, 255, 140, 0.3);
+}
+
+.action-buttons-compact {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-compact {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border: 1px solid;
+  border-radius: 16px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-compact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-compact:hover::before {
+  left: 100%;
+}
+
+.btn-compact.primary {
+  background: rgba(0, 255, 140, 0.1);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-compact.primary:hover {
+  background: rgba(0, 255, 140, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 255, 140, 0.3);
+}
+
+.btn-compact.secondary {
+  background: rgba(234, 68, 53, 0.1);
+  border-color: #ea4435;
+  color: #ea4435;
+}
+
+.btn-compact.secondary:hover {
+  background: rgba(234, 68, 53, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-compact.tertiary {
+  background: rgba(138, 43, 226, 0.1);
+  border-color: #8a2be2;
+  color: #8a2be2;
+}
+
+.btn-compact.tertiary:hover {
+  background: rgba(138, 43, 226, 0.2);
+  transform: translateY(-2px);
+}
+
+.project-status-compact {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+}
+
+.status-badge.production {
+  background: rgba(40, 202, 66, 0.2);
+  color: #28ca42;
+  border: 1px solid #28ca42;
+  padding: 4px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Hover Effects for the Entire Card */
+.compact-design:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 255, 140, 0.3), 0 0 40px rgba(0, 255, 140, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .compact-design {
+    max-width: 100% !important;
+    margin: 1rem !important;
+  }
+
+  .project-identity-badge {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .features-showcase-compact {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons-compact {
+    flex-wrap: wrap;
+  }
+}

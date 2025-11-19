@@ -1,0 +1,39 @@
+/* Background Image Hover Effect */
+.card-header-enterprise {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.background-swagger-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(1px) brightness(0.3);
+  transition: filter 0.4s ease-in-out;
+}
+
+.project-enterprise-card:hover .project-background-image {
+  opacity: 1;
+}
+
+.project-enterprise-card:hover .background-swagger-image {
+  filter: blur(0.5px) brightness(0.4);
+}
+
+/* Ensure content stays above background */
+.project-identity-badge,
+.tech-stack-visual {
+  position: relative;
+  z-index: 2;
+}

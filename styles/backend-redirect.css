@@ -1,0 +1,78 @@
+.backend-terminal {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(7, 18, 26, 0.95);
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 255, 140, 0.2);
+    font-family: 'Consolas', monospace;
+    color: #e6eef6;
+    z-index: 1000;
+    box-shadow: 0 4px 30px rgba(0, 255, 140, 0.15);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.backend-terminal:hover {
+    transform: translateY(-2px);
+    border-color: #00ff8c;
+    box-shadow: 0 6px 35px rgba(0, 255, 140, 0.25);
+}
+
+.backend-terminal::before {
+    content: ">";
+    color: #00ff8c;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.backend-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    background: #00ff8c;
+    animation: blink 1s infinite;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.backend-terminal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        transparent 0%,
+        rgba(0, 255, 140, 0.03) 50%,
+        transparent 100%);
+    animation: scan 3s linear infinite;
+    z-index: -1;
+}
+
+@keyframes scan {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .backend-terminal {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
