@@ -71,12 +71,12 @@
         <h1 class="mono mb-1 animate__animated animate__fadeIn">
         ~/backend/nicolás_romero $
         </h1>
-        <div class="text-muted">
-        <span id="typed-output"></span>
+        <div class="text-muted mb-3">
+        <span id="typed-output" class="text-info"></span>
         <span class="typed-cursor" style="color: var(--accent)">|</span>
         </div>
-      </div>
-      <div class="text-end">
+            </div>
+            <div class="text-end mobile-portal-fix"></div>
         <!-- Portfolio Navigation Button -->
         <a href="../../index.html" class="fullstack-portal-btn">
         <div class="portal-ring">
@@ -97,6 +97,53 @@
           <span class="particle"></span>
         </div>
         </a>
+            </div>
+
+            <style>
+            /* Fix for mobile horizontal scroll issue */
+            @media (max-width: 768px) {
+        .mobile-portal-fix {
+          text-align: center !important;
+          max-width: 100%;
+          overflow: hidden;
+        }
+        
+        .fullstack-portal-btn {
+          transform: scale(0.8);
+          margin: 0 auto;
+          position: relative;
+          right: 0;
+        }
+        
+        .d-flex.justify-content-between.align-items-start {
+          flex-direction: column;
+          gap: 1rem;
+        }
+        
+        .d-flex.justify-content-between.align-items-start > div:first-child {
+          width: 100%;
+        }
+        
+        .d-flex.justify-content-between.align-items-start > div:last-child {
+          width: 100%;
+          align-self: center;
+        }
+            }
+            
+            @media (max-width: 480px) {
+        .fullstack-portal-btn {
+          transform: scale(0.7);
+        }
+        
+        .portal-text .portal-label {
+          font-size: 0.8rem;
+        }
+        
+        .portal-text .portal-sublabel {
+          font-size: 0.65rem;
+        }
+            }
+            </style>
         
         <div class="badge-soft mt-3">Backend • APIs • DevOps • Testing</div>
         <div class="mt-2 small text-muted">
@@ -106,7 +153,7 @@
       </div>
 
       <!-- Matrix-style Hero Terminal -->
-      <div class="hero-terminal-frame matrix-glow">
+      <div class="hero-terminal-frame matrix-glow mx-5 mb-5">
         <div class="terminal-header">
           <div class="terminal-controls">
             <div class="dot red pulse-dot"></div>
@@ -160,7 +207,7 @@
                       <span class="value highlight">NestJS • TypeScript • JavaScript • SQL/NoSQL</span>
                     </div>
                     <div class="matrix-line"></div>
-                      <span class="key">EXPERIENCE:</span>
+                      <span class="key">EXPERIENCE:</span> <br/>
                       <span class="value">3+ años diseñando y desarrollando soluciones backend escalables</span>
                     </div> <br/>
                     <div class="matrix-line">
@@ -177,9 +224,9 @@
                       <p class="description-text">
                         <span class="matrix-prompt"></span>
                         Desarrollador Backend con <span class="highlight">3+ años de experiencia</span> especializado en 
-                        el diseño e implementación de <span class="highlight">arquitecturas por capas escalables</span>. 
-                        Experto en desarrollo de <span class="highlight">APIs RESTful de alto rendimiento</span>, 
-                        implementación de sistemas de autenticación robustos (JWT/OAuth2), 
+                        el diseño e implementación de <span class="highlight">arquitecturas por capas escalables</span>. <br/>
+                        Experto en desarrollo de <span class="highlight">APIs RESTful de alto rendimiento</span>, <br/>
+                        implementación de sistemas de autenticación robustos (JWT), <br/>
                         y gestión de <span class="highlight">bases de datos tanto NoSQL como relacionales</span>.
                       </p><br/>
                       <div class="code-example">
@@ -188,27 +235,123 @@
                           <span class="code-status">✓ Production Experience</span>
                         </div>
                         <pre class="code-block">
-      <span class="code-comment">// Mi evolución técnica</span>
-      <span class="code-keyword">const</span> <span class="code-variable">journey</span> = {
-        <span class="code-property">foundation</span>: <span class="code-string">'Express + MongoDB'</span>,
-        <span class="code-property">evolution</span>: <span class="code-string">'NestJS + TypeScript + SQL'</span>,
-        <span class="code-property">expansion</span>: <span class="code-string">'Python + Django'</span>,
-        <span class="code-property">architecture</span>: <span class="code-string">'Layered: Routes → Controllers → Services → DAO & sistema modular.'</span>
-      };</pre>
+              <span class="code-comment">// Mi evolución técnica</span>
+              <span class="code-keyword">const</span> <span class="code-variable">journey</span> = {
+                <span class="code-property">foundation</span>: <span class="code-string">'Express + MongoDB'</span>,
+                <span class="code-property">evolution</span>: <span class="code-string">'NestJS + TypeScript + SQL'</span>,
+                <span class="code-property">expansion</span>: <span class="code-string">'Python + Django'</span>,
+                <span class="code-property">architecture</span>: <span class="code-string">'Layered: Routes → Controllers → Services → DAO & sistema modular.'</span>
+              };</pre>
                       </div>
                     </div>
+
+                    <!-- Add mobile responsive styles -->
+                    <style>
+                    @media (max-width: 768px) {
+                      .profile-content {
+                        padding: 0 10px !important;
+                        overflow-x: hidden !important;
+                      }
+                      
+                      .bio-section {
+                        padding: 0 !important;
+                        margin: 0 !important;
+                        width: 100% !important;
+                        max-width: 100% !important;
+                        overflow-x: hidden !important;
+                      }
+                      
+                      .matrix-line {
+                        display: flex !important;
+                        flex-direction: column !important;
+                        gap: 4px !important;
+                        margin-bottom: 12px !important;
+                        word-wrap: break-word !important;
+                        overflow-wrap: break-word !important;
+                      }
+                      
+                      .matrix-line .key {
+                        font-size: 0.8rem !important;
+                        min-width: auto !important;
+                        width: auto !important;
+                      }
+                      
+                      .matrix-line .value {
+                        font-size: 0.85rem !important;
+                        line-height: 1.4 !important;
+                        word-wrap: break-word !important;
+                        overflow-wrap: break-word !important;
+                        max-width: 100% !important;
+                        white-space: normal !important;
+                      }
+                      
+                      .description-block {
+                        margin-top: 16px !important;
+                        padding: 0 !important;
+                        width: 100% !important;
+                        overflow-x: hidden !important;
+                      }
+                      
+                      .description-text {
+                        font-size: 0.9rem !important;
+                        line-height: 1.5 !important;
+                        word-wrap: break-word !important;
+                        overflow-wrap: break-word !important;
+                        max-width: 100% !important;
+                      }
+                      
+                      .code-example {
+                        margin-top: 16px !important;
+                        width: 100% !important;
+                        overflow-x: auto !important;
+                      }
+                      
+                      .code-block {
+                        font-size: 0.75rem !important;
+                        line-height: 1.3 !important;
+                        padding: 12px !important;
+                        overflow-x: auto !important;
+                        white-space: pre !important;
+                      }
+                      
+                      .code-header {
+                        flex-direction: column !important;
+                        gap: 4px !important;
+                        align-items: flex-start !important;
+                      }
+                      
+                      .code-lang, .code-status {
+                        font-size: 0.7rem !important;
+                      }
+                    }
+                    
+                    @media (max-width: 480px) {
+                      .matrix-line .value {
+                        font-size: 0.8rem !important;
+                      }
+                      
+                      .description-text {
+                        font-size: 0.85rem !important;
+                      }
+                      
+                      .code-block {
+                        font-size: 0.7rem !important;
+                        padding: 10px !important;
+                      }
+                    }
+                    </style>
 
                     <!-- Skills Matrix -->
                     <div class="skills-matrix">
                       <div class="skill-category">
-                        <span class="category-label">CORE_BACKEND</span>
-                        <div class="skill-items">
-                          <span class="skill-tag level-expert">Node.js</span>
-                          <span class="skill-tag level-expert">Express.js</span>
-                          <span class="skill-tag level-advanced">NestJS</span>
-                          <span class="skill-tag level-intermediate">TypeScript</span>
-                          <span class="skill-tag level-advanced">Django REST</span>
-                        </div>
+                      <span class="category-label">CORE_BACKEND</span>
+                      <div class="skill-items">
+                        <span class="skill-tag level-expert">Node.js</span>
+                        <span class="skill-tag level-expert">Express.js</span>
+                        <span class="skill-tag level-advanced">NestJS</span>
+                        <span class="skill-tag level-intermediate">TypeScript</span>
+                        <span class="skill-tag level-advanced">Django REST</span>
+                      </div>
                       </div>
                       
                       <div class="skill-category">
@@ -220,7 +363,7 @@
                           <span class="skill-tag level-intermediate">Prisma</span>
                           <span class="skill-tag level-intermediate">PostgreSQL</span>
                           <span class="skill-tag level-intermediate">MySQL</span>
-                          <span class="skill-tag level-intermediate">SQLite</span>
+                          
                         </div>
                       </div>
 
@@ -240,7 +383,7 @@
                           <span class="skill-tag level-advanced">Express Layered</span>
                           <span class="skill-tag level-advanced">Routes/Controllers/DAOs</span>
                           <span class="skill-tag level-expert">NestJS Modular</span>
-                          <span class="skill-tag level-expert">Microservices</span>
+                       
                         </div>
                         </div>
                     </div>
@@ -251,7 +394,7 @@
           </div>
 
           <!-- Terminal Footer with Typing Animation -->
-          <div class="terminal-footer">
+          <div class="terminal-footer mx-5">
             <div class="command-line">
               <span class="prompt">nicolas@system<span class="text-info">(master)</span></span>
               <span class="separator">$</span>
@@ -523,7 +666,9 @@
 <div class="projects-showcase-header mx-5 mb-4">
         <!-- Projects Grid Container -->
         <div class="projects-enterprise-grid">
-          <!-- Project 1: Social Network API (Express.js) - Compact Enterprise Design -->
+
+
+          <!-- 1.1_ RED SOCIAL - EXPRESS -->
           <div class="project-enterprise-card express-system real-time-showcase mx-5 compact-design" data-filter="express">
 
             <!-- efecto neon glow con hover  ||  DESACTIVADO - mucho constraste -->
@@ -642,7 +787,7 @@
 
             <!-- Action Buttons -->
             <div class="action-buttons enhanced mt-3">
-              <a href="https://github.com/nicolasromeroo/social-network" target="_blank" class="btn-action primary enhanced">
+              <a href="https://github.com/nicolasromeroo/social-network" target="_blank" class="btn-action primary mx-3 enhanced">
               <span class="btn-glow"></span>
               <span class="btn-icon"></span>
               <span class="btn-text">
@@ -651,7 +796,7 @@
               </span>
               </a>
 
-              <button class="btn-action secondary enhanced" onclick="toggleApiDetails()">
+              <button class="btn-action secondary mx-3 my-4 enhanced" onclick="toggleApiDetails()">
               <span class="btn-glow"></span>
               <span class="btn-icon"></span>
               <span class="btn-text">
@@ -949,6 +1094,43 @@
                       <div class="title-underline-animated"></div>
                     </h2>
                     
+                    <style>
+                    /* Mobile responsive fixes for matrix title */
+                    @media (max-width: 768px) {
+                      .matrix-title {
+                      font-size: 1.5rem !important;
+                      letter-spacing: 1px !important;
+                      line-height: 1.2 !important;
+                      margin-bottom: 0.5rem !important;
+                      }
+                      
+                      .glitch-text {
+                      font-size: 1.5rem !important;
+                      word-break: break-word !important;
+                      overflow-wrap: break-word !important;
+                      }
+                      
+                      .title-underline-animated {
+                      width: 100% !important;
+                      height: 2px !important;
+                      }
+                    }
+                    
+                    @media (max-width: 480px) {
+                      .matrix-title {
+                      font-size: 1.2rem !important;
+                      letter-spacing: 0.5px !important;
+                      }
+                      
+                      .glitch-text {
+                      font-size: 1.2rem !important;
+                      }
+                      
+                      .projects-matrix {
+                      padding: 10px !important;
+                      }
+                    }
+                    </style>
                     <div class="subtitle-description">
                       <span class="subtitle-icon"></span>
                       <span class="subtitle-text">Expandiendo el ecosistema backend con diversos enfoques arquitectónicos</span>
@@ -2193,10 +2375,8 @@
         // Initialize Typed.js
         new Typed("#typed-output", {
           strings: [
-            "Senior Backend Architect ^1000",
             "NestJS • TypeScript • Microservices ^800",
             "Docker • Kubernetes • Cloud Native ^800",
-            "CQRS • Event Sourcing • DDD ^800",
             "Real-time Systems • WebSockets ^800",
             "Performance Optimization • 99.9% Uptime ^800",
             "Security-First • JWT • OAuth2 ^800",
