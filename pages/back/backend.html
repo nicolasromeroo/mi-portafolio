@@ -26,7 +26,7 @@
       href="../../styles/backend/fullstack-portal.css"
     />
     <link rel="stylesheet" href="../../styles/backend/hacker-terminal-theme-styles.css" />
-<link rel="stylesheet" href="../../styles/backend/matrix-hero-terminal-style.css" />
+<!-- <link rel="stylesheet" href="../../styles/backend/matrix-hero-terminal-style.css" /> -->
 <link rel="stylesheet" href="../../styles/backend/action-buttons-cards.css" />
 <link rel="stylesheet" href="../../styles/backend/code-and-screenshots-grid.css" />
 <link
@@ -60,6 +60,9 @@
     <link rel="stylesheet" href="../../styles/backend/social-net-swagger.css" />
     <link rel="stylesheet" href="../../styles/backend/cartel-mas-sistemas-back.css" />
     <link rel="stylesheet" href="../../styles/backend/cooming-soon.css" />
+<link rel="stylesheet" href="../../styles/backend/retro-profile.css" />
+<link rel="stylesheet" href="../../styles/backend/my-tech-stack.css" />
+<link rel="stylesheet" href="../../styles/backend/bootastrap-hacker-terminal.css" />
 
     <link rel="stylesheet" href="../../styles/backend-1.css" />
     <link rel="stylesheet" href="../../styles/enterprise-cards.css" />
@@ -67,18 +70,42 @@
     <body>
     <div class="container py-5">
       <div class="d-flex justify-content-between align-items-start mb-4">
-      <div>
-        <h1 class="mono mb-1 animate__animated animate__fadeIn">
-        ~/backend/nicolás_romero $
-        </h1>
-        <div class="text-muted mb-3">
-        <span id="typed-output" class="text-info"></span>
-        <span class="typed-cursor" style="color: var(--accent)">|</span>
-        </div>
-            </div>
-            <div class="text-end mobile-portal-fix"></div>
-        <!-- Portfolio Navigation Button -->
-        <a href="../../index.html" class="fullstack-portal-btn">
+            <div class="w-100 text-align-start mobile-portal-fix">
+         <!-- Main Profile Header -->
+
+                          <div class="profile-header-card retro-glow">
+                            <div class="profile-avatar-section">
+                              <div class="avatar-container">
+                                <div class="avatar-ring pulsing">
+                                  <div class="avatar-core">
+                                    <img src="../../img/backend/avatar.jfif" alt="" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;" />
+                                  </div>
+                                </div>
+                                <div class="status-indicator online">
+                                  <div class="status-dot"></div>
+                                  <span class="status-text">ONLINE</span>
+                                </div>
+                              </div>
+                              <div class="profile-identity">
+                                <h3 class="developer-name glitch-text" data-text="NICOLÁS EMILIANO ROMERO">NICOLÁS EMILIANO ROMERO</h3>
+                                <div class="developer-title">
+                                  <span class="title-bracket">[</span>
+                                  <div class="level-indicator d-inline-block">
+                                  <span class="level-label">LVL</span>
+                                  <span class="level-number">BACKEND ARCHITECT</span>
+                                  <!-- <div class="xp-bar">
+                                  <div class="xp-fill" style="width: 85%"></div>
+                                  </div> -->
+                                  <span class="xp-text">3+ AÑOS EXP</span>
+                                </div>
+                                  <span class="title-bracket">]</span>
+                                </div>
+
+                              </div>
+                            </div>
+
+
+            <a href="../../index.html" class="fullstack-portal-btn">
         <div class="portal-ring">
           <div class="portal-inner">
           <div class="portal-core">
@@ -146,14 +173,13 @@
             </style>
         
         <div class="badge-soft mt-3">Backend • APIs • DevOps • Testing</div>
-        <div class="mt-2 small text-muted">
+        <!-- <div class="mt-2 small text-muted">
         Última actualización: <span class="mono">2025-11-01</span>
-        </div>
+        </div> -->
       </div>
       </div>
-
-      <!-- Matrix-style Hero Terminal -->
-      <div class="hero-terminal-frame matrix-glow mx-5 mb-5">
+      <!-- Matrix-style Hero Terminal with Bootstrap Hacker Theme -->
+      <div class="hero-terminal-frame matrix-glow mx-2 mx-md-5 mb-5">
         <div class="terminal-header">
           <div class="terminal-controls">
             <div class="dot red pulse-dot"></div>
@@ -167,228 +193,375 @@
             <span class="cursor-blink mx-2">$</span>
           </div>
           <div class="terminal-badges">
-            <span class="tech-badge">javascript</span>
+            <span class="tech-badge active">node.js</span>
             <span class="tech-badge">typescript</span>
-            <span class="tech-badge">python</span>
+            <span class="tech-badge">nestjs</span>
           </div>
         </div>
 
         <div class="terminal-content">
-          <div class="command-line">
+          <div class="command-line mb-3">
             <span class="prompt">nicolas@system</span>
             <span class="separator">$</span>
-            <span class="command">cat backend_developer.profile</span>
+            <span class="command">cat backend_developer.profile --verbose</span>
           </div>
 
-          <div class="terminal-output"></div>
+          <div class="terminal-output">
+            <!-- Console Loading Effect -->
+            <div class="console-loading mb-3">
+              <div class="loading-line">
+                <span class="loading-text">Loading profile data...</span>
+                <div class="loading-dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="progress-bar-console">
+                <div class="progress-fill-console"></div>
+              </div>
+            </div>
+
+            <!-- Hacker-style Profile Section -->
             <div class="profile-section">
-              <div class="section-header matrix-border">
-                <span class="section-icon"></span>
-                <h5 class="matrix-title">BACKEND_DEVELOPER.EXE</h5>
-                <div class="status-indicator">
+              <div class="section-header matrix-border mb-4">
+                <span class="section-icon">►</span>
+                <h5 class="matrix-title mb-0">BACKEND_DEVELOPER.EXE</h5>
+                <div class="status-indicator ms-auto">
                   <span class="status-dot active"></span>
-                  <span class="status-text">ONLINE</span>
+                  <span class="status-text">SYSTEM_READY</span>
                 </div>
               </div>
 
-              <div class="profile-content">
-                <div class="profile-main">
-                  <div class="bio-section">
-                    <div class="matrix-line">
-                      <span class="key">ROLE:</span>
-                      <span class="value highlight">NestJS Developer & API Architect</span>
-                    </div>
-                    <div class="matrix-line">
-                      <span class="key">MIGRATION:</span>
-                      <span class="value">Express.js Layered → NestJS Modular Architecture</span>
-                    </div>
-                    <div class="matrix-line">
-                      <span class="key">STACK:</span>
-                      <span class="value highlight">NestJS • TypeScript • JavaScript • SQL/NoSQL</span>
-                    </div>
-                    <div class="matrix-line"></div>
-                      <span class="key">EXPERIENCE:</span> <br/>
-                      <span class="value">3+ años diseñando y desarrollando soluciones backend escalables</span>
-                    </div> <br/>
-                    <div class="matrix-line">
-                      <span class="key">EVOLUTION:</span>
-                      <span class="value highlight">Express.js → NestJS</span>
-                       <!-- <em class="text-success">( *con conocimientos en Django REST Framework )</em> -->
-                    </div>
-                    <div class="matrix-line">
-                      <span class="key">CONTEXT:</span>
-                      <span class="value">Proyectos Freelance • Desarrollo de Producto • Colaboración Técnica</span>
-                    </div>
+              <!-- Hacker Terminal Bootstrap Grid -->
+              <div class="container-fluid d-flex px-0">
+                <div class="row g-0">
+                  <div class="col-12">
+                    <!-- Main Profile Terminal Card -->
+                    <div class="card bg-black border-success hacker-card">
+                      <div class="card-header bg-transparent border-success p-3">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                          <div class="d-flex align-items-center">
+                            <span class="badge bg-success text-black fw-bold fs-6 me-2">
+                              <i class="fas fa-terminal me-1"></i>BACKEND_DEV.EXE
+                            </span>
+                            <span class="text-success mono small">Process ID: 2024</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="bg-success rounded-circle me-2 pulse-dot" style="width: 10px; height: 10px;"></div>
+                            <small class="text-success fw-bold mono">STATUS: ACTIVE</small>
+                          </div>
+                        </div>
+                      </div>
+                      
                     
-                    <div class="description-block">
-                      <p class="description-text">
-                        <span class="matrix-prompt"></span>
-                        Desarrollador Backend con <span class="highlight">3+ años de experiencia</span> especializado en 
-                        el diseño e implementación de <span class="highlight">arquitecturas por capas escalables</span>. <br/>
-                        Experto en desarrollo de <span class="highlight">APIs RESTful de alto rendimiento</span>, <br/>
-                        implementación de sistemas de autenticación robustos (JWT), <br/>
-                        y gestión de <span class="highlight">bases de datos tanto NoSQL como relacionales</span>.
-                      </p><br/>
-                      <div class="code-example">
-                        <div class="code-header">
-                          <span class="code-lang">Node.js</span>
-                          <span class="code-status">✓ Production Experience</span>
-                        </div>
-                        <pre class="code-block">
-              <span class="code-comment">// Mi evolución técnica</span>
-              <span class="code-keyword">const</span> <span class="code-variable">journey</span> = {
-                <span class="code-property">foundation</span>: <span class="code-string">'Express + MongoDB'</span>,
-                <span class="code-property">evolution</span>: <span class="code-string">'NestJS + TypeScript + SQL'</span>,
-                <span class="code-property">expansion</span>: <span class="code-string">'Python + Django'</span>,
-                <span class="code-property">architecture</span>: <span class="code-string">'Layered: Routes → Controllers → Services → DAO & sistema modular.'</span>
-              };</pre>
-                      </div>
-                    </div>
+                      <div class="card-body col p-4">
+                        <div class="row g-4">
+                          <!-- Left Column: Tech Stack -->
+                          <div class="col-lg-6">
+                            <!-- Tech Stack Display - Retro Style -->
+                            <div class="tech-stack-panel retro-panel w-100 h-100">
+                              <div class="panel-header">
+                                <div class="panel-icon">
+                                  <i class="fas fa-microchip"></i>
+                                </div>
+                                <h4 class="panel-title">TECH_ARSENAL.exe</h4>
+                                <div class="panel-status">
+                                  <div class="status-led active"></div>
+                                  <span>LOADED</span>
+                                </div>
+                              </div>
+                              
+                              <div class="tech-categories">
+                                <!-- Primary Stack -->
+                                <div class="tech-category primary ">
+                                  <div class="category-header">
+                                    <span class="category-icon"></span>
+                                    <span class="category-name">MY_STACK</span>
+                                  </div>
+                                  <div class="tech-items professional-stack tetris-layout">
+                                    <!-- Row 1: Tetris Shape T -->
+                                    <div class="tetris-row row-1">
+                                      <div class="tech-item legendary tetris-piece t-piece center">
+                                        <div class="item-visual">
+                                          <img src="https://nestjs.com/img/logo-small.svg" alt="NestJS" class="tech-logo" />
+                                          <div class="tech-glow nestjs"></div>
+                                        </div>
+                                        <div class="item-details">
+                                          <span class="item-name">NestJS</span>
+                                          <span class="item-description">arquitectura modular</span>
+                                        </div>
+                                      </div>
+                                    </div>
 
-                    <!-- Add mobile responsive styles -->
-                    <style>
-                    @media (max-width: 768px) {
-                      .profile-content {
-                        padding: 0 10px !important;
-                        overflow-x: hidden !important;
-                      }
-                      
-                      .bio-section {
-                        padding: 0 !important;
-                        margin: 0 !important;
-                        width: 100% !important;
-                        max-width: 100% !important;
-                        overflow-x: hidden !important;
-                      }
-                      
-                      .matrix-line {
-                        display: flex !important;
-                        flex-direction: column !important;
-                        gap: 4px !important;
-                        margin-bottom: 12px !important;
-                        word-wrap: break-word !important;
-                        overflow-wrap: break-word !important;
-                      }
-                      
-                      .matrix-line .key {
-                        font-size: 0.8rem !important;
-                        min-width: auto !important;
-                        width: auto !important;
-                      }
-                      
-                      .matrix-line .value {
-                        font-size: 0.85rem !important;
-                        line-height: 1.4 !important;
-                        word-wrap: break-word !important;
-                        overflow-wrap: break-word !important;
-                        max-width: 100% !important;
-                        white-space: normal !important;
-                      }
-                      
-                      .description-block {
-                        margin-top: 16px !important;
-                        padding: 0 !important;
-                        width: 100% !important;
-                        overflow-x: hidden !important;
-                      }
-                      
-                      .description-text {
-                        font-size: 0.9rem !important;
-                        line-height: 1.5 !important;
-                        word-wrap: break-word !important;
-                        overflow-wrap: break-word !important;
-                        max-width: 100% !important;
-                      }
-                      
-                      .code-example {
-                        margin-top: 16px !important;
-                        width: 100% !important;
-                        overflow-x: auto !important;
-                      }
-                      
-                      .code-block {
-                        font-size: 0.75rem !important;
-                        line-height: 1.3 !important;
-                        padding: 12px !important;
-                        overflow-x: auto !important;
-                        white-space: pre !important;
-                      }
-                      
-                      .code-header {
-                        flex-direction: column !important;
-                        gap: 4px !important;
-                        align-items: flex-start !important;
-                      }
-                      
-                      .code-lang, .code-status {
-                        font-size: 0.7rem !important;
-                      }
-                    }
-                    
-                    @media (max-width: 480px) {
-                      .matrix-line .value {
-                        font-size: 0.8rem !important;
-                      }
-                      
-                      .description-text {
-                        font-size: 0.85rem !important;
-                      }
-                      
-                      .code-block {
-                        font-size: 0.7rem !important;
-                        padding: 10px !important;
-                      }
-                    }
-                    </style>
+                                    <!-- Row 2: Tetris Shape L -->
+                                    <div class="tetris-row row-2">
+                                      <div class="tech-item epic tetris-piece l-piece left">
+                                        <div class="item-visual">
+                                          <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express.js" class="tech-logo express-filter" />
+                                          <div class="tech-glow express"></div>
+                                        </div>
+                                        <div class="item-details">
+                                          <span class="item-name">Express.js</span>
+                                          <span class="item-description">RESTful API</span>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="tech-item legendary tetris-piece l-piece right">
+                                        <div class="item-visual">
+                                          <img src="https://www.typescriptlang.org/favicon-32x32.png" alt="TypeScript" class="tech-logo" />
+                                          <div class="tech-glow typescript"></div>
+                                        </div>
+                                        <div class="item-details">
+                                          <span class="item-name">TypeScript</span>
+                                          <span class="item-description">Type-Safe</span>
+                                        </div>
+                                      </div>
+                                    </div>
 
-                    <!-- Skills Matrix -->
-                    <div class="skills-matrix">
-                      <div class="skill-category">
-                      <span class="category-label">CORE_BACKEND</span>
-                      <div class="skill-items">
-                        <span class="skill-tag level-expert">Node.js</span>
-                        <span class="skill-tag level-expert">Express.js</span>
-                        <span class="skill-tag level-advanced">NestJS</span>
-                        <span class="skill-tag level-intermediate">TypeScript</span>
-                        <span class="skill-tag level-advanced">Django REST</span>
-                      </div>
-                      </div>
-                      
-                      <div class="skill-category">
-                        <span class="category-label">DATABASE</span>
-                        <div class="skill-items">
-                          <span class="skill-tag level-expert">MongoDB</span>
-                          <span class="skill-tag level-expert">Mongoose</span>
-                          <span class="skill-tag level-advanced">Firestore</span>
-                          <span class="skill-tag level-intermediate">Prisma</span>
-                          <span class="skill-tag level-intermediate">PostgreSQL</span>
-                          <span class="skill-tag level-intermediate">MySQL</span>
-                          
-                        </div>
-                      </div>
+                                    <!-- Row 3: Tetris Shape I (Long block) -->
+                                    <div class="tetris-row row-3">
+                                      <div class="tech-item epic tetris-piece i-piece">
+                                        <div class="item-visual">
+                                          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="tech-logo" />
+                                          <div class="tech-glow javascript"></div>
+                                        </div>
+                                        <div class="item-details">
+                                          <span class="item-name">JavaScript</span>
+                                          <span class="item-description">lenguaje dinámico</span>
+                                        </div>
+                                      </div>
+                                    </div>
 
-                      <div class="skill-category">
-                        <span class="category-label">SECURITY_AUTH</span>
-                        <div class="skill-items">
-                          <span class="skill-tag level-advanced">Hash Password</span>
-                          <span class="skill-tag level-expert">bcrypt</span>
-                          <span class="skill-tag level-expert">JWT</span>
-                          <span class="skill-tag level-expert">Joi Validation</span>
+                                    <!-- Row 4: Tetris Shape O and S -->
+                                    <div class="tetris-row row-4">
+                                      <div class="tech-item epic tetris-piece o-piece left">
+                                        <div class="item-visual">
+                                          <img src="https://www.mongodb.com/assets/images/global/leaf.png" alt="MongoDB" class="tech-logo" />
+                                          <div class="tech-glow mongodb"></div>
+                                        </div>
+                                        <div class="item-details">
+                                          <span class="item-name">MongoDB</span>
+                                          <span class="item-description">NoSQL</span>
+                                        </div>
+                                      </div>
+
+                                      <div class="tech-item rare tetris-piece s-piece right">
+                                        <div class="item-visual">
+                                          <img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="PostgreSQL" class="tech-logo" />
+                                          <div class="tech-glow postgresql"></div>
+                                        </div>
+                                        <div class="item-details">
+                                          <span class="item-name">PostgreSQL</span>
+                                          <span class="item-description">SQL</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <!-- DevOps Section -->
+                                <div class="tech-category devops mt-4">
+                                  <div class="tech-items devops-stack d-flex flex-wrap gap-3">
+                                    <div class="tech-item devops-item">
+                                      <div class="item-visual">
+                                        <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" class="tech-logo" />
+                                        <div class="tech-glow docker"></div>
+                                      </div>
+                                      <div class="item-details">
+                                        <span class="item-name">Docker</span>
+                                        <span class="item-description">containerización</span>
+                                      </div>
+                                    </div>
+
+                                    <div class="tech-item devops-item">
+                                      <div class="item-visual">
+                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="tech-logo" />
+                                        <div class="tech-glow kubernetes"></div>
+                                      </div>
+                                      <div class="item-details">
+                                        <span class="item-name">Kubernetes</span>
+                                        <span class="item-description">orquestación</span>
+                                      </div>
+                                    </div>
+
+                                    <!-- Render -->
+                                    <div class="tech-item devops-item">
+                                      <div class="item-visual">
+                                        <img src="https://cdn.sanity.io/images/34ent8ly/production/ec37a3660704e1fa2b4246c9a01ab34e145194ad-824x824.png" alt="Render" class="tech-logo" />
+                                        <div class="tech-glow render"></div>
+                                      </div>
+                                      <div class="item-details">
+                                        <span class="item-name">RENDER</span>
+                                        <span class="item-description">servidor web</span>
+                                      </div>  
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Right Column: Profile Description and Experience -->
+                          <div class="col-lg-6 ">
+                            
+                            <div class="profile-content-panel w-100 d-flex flex-column">
+                              <!-- Description Block -->
+                              <div class="item-description flex-grow-1">
+                                <div class="alert alert-dark border-success h-100" role="alert">
+                                  <p class="mb-3 small">
+                                    Desarrollador Backend con <span class="text-success fw-bold">3+ años de experiencia</span> especializado en 
+                                    el diseño e implementación de <span class="text-success fw-bold">arquitecturas por capas escalables</span>. 
+                                    Experto en desarrollo de <span class="text-success fw-bold">APIs RESTful de alto rendimiento</span>, 
+                                    implementación de sistemas de autenticación robustos (JWT), 
+                                    y gestión de <span class="text-success fw-bold">bases de datos tanto NoSQL como relacionales</span>.
+                                  </p>
+                                  
+                                  <!-- Code Example -->
+                                  <div class="card bg-black border-secondary mb-4">
+                                    <div class="card-header bg-transparent border-secondary py-2">
+                                      <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-warning fw-bold">Node.js</small>
+                                        <small class="text-success">✓ Production Experience</small>
+                                      </div>
+                                    </div>
+                                    <div class="card-body p-3">
+                                      <pre class="text-light mb-0" style="font-size: 0.8rem; line-height: 1.3;">
+                        <span class="text-secondary">// Mi evolución técnica</span>
+                        <span class="text-warning">const</span> <span class="text-info">journey</span> = {
+                          <span class="text-success">foundation</span>: <span class="text-danger">'Express + MongoDB'</span>,
+                          <span class="text-success">evolution</span>: <span class="text-danger">'NestJS + TypeScript + SQL'</span>,
+                          <span class="text-success">expansion</span>: <span class="text-danger">'Python + Django'</span>,
+                          <span class="text-success">architecture</span>: <span class="text-danger">'Layered: Routes → Controllers → Services → DAO & modular system.'</span>
+                        };</pre>
+                                    </div>
+                                  </div>
+
+                                  
+                                  <!-- Professional Experience Timeline -->
+                                  <div class="experience-section">
+                                    <div class="card bg-dark border-success">
+                                      <div class="card-header bg-transparent border-success">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                          <h6 class="text-success mb-0 fw-bold">LAST_EXPERIENCES_AS_BACKEND</h6>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="card-body">
+                                        <div class="row g-3">
+                                          <div class="col-12">
+                                            <div class="d-flex align-items-start">
+                                              <div class="bg-success rounded-circle me-3 pulse-dot" style="width: 12px; height: 12px; margin-top: 4px;"></div>
+                                              <div class="flex-grow-1">
+                                                <small class="text-success fw-bold">2023 - 2025</small>
+                                                <div class="text-light fw-bold">Backend Developer</div>
+                                                <small class="text-warning fw-bold">Sistema de Gestión de Depósitos & Inventarios</small>
+                                                <div class="mt-2 text-white">
+                                                  <small class="text-white d-block">• API completa para control de inventarios en tiempo real</small>
+                                                  <small class="text-white d-block">• Sistema de ubicaciones y tracking de productos en almacén</small>
+                                                  <small class="text-white d-block">• Gestión automatizada de fechas de vencimiento y rotación</small>
+                                                  <small class="text-white d-block">• Panel administrativo para gestión de personal</small>
+                                                  <small class="text-white d-block">• Landing web corporativa con dashboard de métricas</small>
+                                                </div>
+                                                <div class="mt-2">
+                                                  <span class="badge bg-secondary me-1">Express.js</span>
+                                                  <span class="badge bg-secondary me-1">MongoDB</span>
+                                                  <span class="badge bg-secondary">Node.js</span>
+                                                  <span class="badge bg-secondary me-1">JWT</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-12">
+                                            <div class="d-flex align-items-start">
+                                              <div class="bg-warning rounded-circle me-3" style="width: 12px; height: 12px; margin-top: 4px;"></div>
+                                              <div class="flex-grow-1">
+                                                <small class="text-warning fw-bold">2025</small>
+                                                <div class="text-light fw-bold">Freelance Backend Developer</div>
+                                                <small class="text-warning fw-bold">E-commerce "Sabores de Casa" - Django REST Framework</small>
+                                                <div class="mt-2 text-white">
+                                                  <small class="text-white d-block">• API REST completa para panadería/pastelería con carrito y checkout</small>
+                                                  <small class="text-white d-block">• Sistema de autenticación JWT y gestión de usuarios</small>
+                                                  <small class="text-white d-block">• Serializers DRF para productos, pedidos y categorías</small>
+                                                  <small class="text-white d-block">• Modelos Django con PostgreSQL para inventario y ventas</small>
+                                                  <small class="text-white d-block">• Panel administrativo personalizado para gestión del negocio</small>
+                                                </div>
+                                                <div class="mt-2">
+                                                  <span class="badge bg-secondary me-1">Django REST</span>
+                                                  <span class="badge bg-secondary me-1">PostgreSQL</span>
+                                                  <span class="badge bg-secondary">JWT Auth</span>
+                                                  <span class="badge bg-secondary me-1">E-commerce</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-12">
+                                            <div class="d-flex align-items-start">
+                                              <div class="bg-info rounded-circle me-3" style="width: 12px; height: 12px; margin-top: 4px;"></div>
+                                              <div class="flex-grow-1">
+                                                <small class="text-info fw-bold">Actualidad</small>
+                                                <div class="text-light fw-bold">Backend Developer</div>
+                                                <small class="text-white">Desarrollo de APIs & Arquitectura Modular</small>
+                                                <div class="mt-1">
+                                                  <small class="text-white d-block">• Migración de sistemas Express.js a NestJS</small>
+                                                  <small class="text-white d-block">• Implementación de WebSocket para tiempo real</small>
+                                                </div>
+                                                <div class="mt-2">
+                                                  <span class="badge bg-secondary me-1">NestJS</span>
+                                                  <span class="badge bg-secondary me-1">TypeScript</span>
+                                                  <span class="badge bg-secondary me-1">Modules</span>
+                                                  <span class="badge bg-secondary me-1">Decorators</span>
+                                                  <span class="badge bg-secondary">Dependency Injection</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                                    </div>
+                                    
+                                  </div>
+                                  </div>
+                                </div>
+                                </div>
+                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                         
+
+
+                              </div>
+
+                            </div>
+                        </div>
+                        </div>
                         </div>
                       </div>
-
-                        <div class="skill-category">
-                        <span class="category-label">ARCHITECTURE</span>
-                        <div class="skill-items">
-                          <span class="skill-tag level-advanced">Express Layered</span>
-                          <span class="skill-tag level-advanced">Routes/Controllers/DAOs</span>
-                          <span class="skill-tag level-expert">NestJS Modular</span>
-                       
-                        </div>
-                        </div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
               </div>
             </div>
           </div>
@@ -487,11 +660,11 @@
                   <span class="stat-label">Sistemas en Producción</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-value">100%</span>
-                  <span class="stat-label">Objetivo de Disponibilidad</span>
+                    <span class="stat-value">✓ ONLINE</span>
+                  <span class="stat-label">Disponibilidad</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-value">3+</span>
+                  <span class="stat-value">+3</span>
                   <span class="stat-label">Stacks Técnicos</span>
                 </div>
                 <div class="stat-item">
@@ -663,8 +836,9 @@
       </style>
 
 <!-- Projects Section Header -->
-<div class="projects-showcase-header mx-5 mb-4">
-        <!-- Projects Grid Container -->
+<div class="projects-showcase-header mx-2 mx-md-5 mb-4">
+  <!-- Projects Grid Container -->
+  <div class="projects-enterprise-grid"></div>
         <div class="projects-enterprise-grid">
 
 
@@ -770,7 +944,7 @@
               <!-- Live Metrics - Compact -->
               <div class="live-metrics-compact">
                 <div class="metric-compact">
-                <span class="metric-value">10+</span>
+                <span class="metric-value">+10</span>
                 <span class="metric-label">Endpoints</span>
                 </div>
                 <div class="metric-compact">
@@ -1205,7 +1379,7 @@
 
                       <div class="metrics-mini">
                         <div class="metric-item">
-                        <span class="metric-value">+ 3</span>
+                        <span class="metric-value">+3</span>
                         <span class="metric-label">User Roles</span>
                         </div>
                         <div class="metric-item">
@@ -1300,7 +1474,7 @@
 
                       <div class="metrics-mini">
                         <div class="metric-item">
-                        <span class="metric-value">18+</span>
+                        <span class="metric-value">+18</span>
                         <span class="metric-label">API Endpoints</span>
                         </div>
                         <div class="metric-item">

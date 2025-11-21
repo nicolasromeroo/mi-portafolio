@@ -1,0 +1,173 @@
+/* Hacker Terminal Bootstrap Enhancements */
+.hacker-card {
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%) !important;
+}
+
+.hacker-info-row {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hacker-info-row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 255, 0, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.hacker-info-row:hover::before {
+  left: 100%;
+}
+
+.hacker-info-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.3);
+}
+
+.console-loading {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.loading-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.loading-text {
+  color: #00ff00;
+  font-weight: 600;
+}
+
+.loading-dots {
+  display: flex;
+  gap: 4px;
+}
+
+.loading-dots .dot {
+  width: 4px;
+  height: 4px;
+  background: #00ff00;
+  border-radius: 50%;
+  animation: loading-pulse 1.4s infinite ease-in-out both;
+}
+
+.loading-dots .dot:nth-child(1) {
+  animation-delay: -0.32s;
+}
+.loading-dots .dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+.progress-bar-console {
+  width: 100%;
+  height: 4px;
+  background: rgba(0, 255, 0, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill-console {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #00ff00, #00ffff);
+  animation: progress-loading 3s ease-out;
+  border-radius: 2px;
+}
+
+@keyframes progress-loading {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes loading-pulse {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.console-simulation {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+}
+
+.output-line {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.blink-text {
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.badge.bg-outline-light {
+  background: transparent !important;
+  border: 1px solid #6c757d;
+  color: #adb5bd;
+}
+
+.pulse-dot {
+  animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.6);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 1);
+    opacity: 0.8;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hacker-info-row {
+    margin-bottom: 1rem;
+  }
+
+  .console-simulation {
+    font-size: 0.75rem;
+  }
+
+  .badge {
+    font-size: 0.65rem;
+  }
+}

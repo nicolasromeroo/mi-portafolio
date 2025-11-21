@@ -1,5 +1,7 @@
 .fullstack-portal-btn {
-  position: relative;
+  position: absolute;
+  right: 150px;
+  top: 110px;
   display: inline-flex;
   align-items: center;
   gap: 15px;
@@ -10,7 +12,7 @@
     rgba(0, 255, 255, 0.1) 50%,
     rgba(138, 43, 226, 0.1) 100%
   );
-  border: 2px solid transparent;
+  border: 2px solid green;
   border-radius: 50px;
   text-decoration: none;
   color: var(--accent);

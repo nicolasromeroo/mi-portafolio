@@ -1,9 +1,25 @@
 /* Enterprise Project Cards Styles */
 .projects-enterprise-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   padding: 1rem;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .projects-enterprise-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-enterprise-grid {
+    gap: 1rem;
+    padding: 0.25rem;
+  }
 }
 
 .project-enterprise-card {
@@ -43,7 +59,7 @@
 }
 
 .status-dot::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -4px;
   left: -4px;
@@ -83,19 +99,31 @@
 .express-system {
   --system-accent: #259dff;
   border: 1px solid var(--system-accent);
-  background: linear-gradient(180deg, rgba(37, 157, 255, 0.1), rgba(7, 19, 27, 0.95));
+  background: linear-gradient(
+    180deg,
+    rgba(37, 157, 255, 0.1),
+    rgba(7, 19, 27, 0.95)
+  );
 }
 
 .nestjs-system {
   --system-accent: #e0234e;
   border: 1px solid var(--system-accent);
-  background: linear-gradient(180deg, rgba(224, 35, 78, 0.1), rgba(7, 19, 27, 0.95));
+  background: linear-gradient(
+    180deg,
+    rgba(224, 35, 78, 0.1),
+    rgba(7, 19, 27, 0.95)
+  );
 }
 
 .migration-system {
   --system-accent: #00ff8c;
   border: 1px solid var(--system-accent);
-  background: linear-gradient(180deg, rgba(0, 255, 140, 0.1), rgba(7, 19, 27, 0.95));
+  background: linear-gradient(
+    180deg,
+    rgba(0, 255, 140, 0.1),
+    rgba(7, 19, 27, 0.95)
+  );
 }
 
 /* Architecture Diagram Styles */
@@ -138,7 +166,7 @@
 }
 
 .connection-line::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -240,7 +268,7 @@
 }
 
 .code-snippet::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -150%;
@@ -297,7 +325,8 @@
 
 /* Animations */
 @keyframes pulse-line {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.5;
   }
   50% {
@@ -325,7 +354,8 @@
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
