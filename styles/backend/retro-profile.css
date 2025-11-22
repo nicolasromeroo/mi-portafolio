@@ -19,16 +19,70 @@
 }
 
 .retro-glow {
-  animation: retro-glow 3s ease-in-out infinite;
+  border: 2px solid #00ff88;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.4), 0 0 20px rgba(0, 255, 136, 0.2),
+    inset 0 0 15px rgba(0, 255, 136, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  animation: retro-glow 4s ease-in-out infinite, border-flicker 0.15s infinite;
+}
+
+.retro-glow::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(0, 255, 136, 0.1) 50%,
+    transparent 70%
+  );
+  background-size: 200% 200%;
+  border-radius: inherit;
+  z-index: -1;
+  animation: border-scan 3s linear infinite;
+  opacity: 0;
+}
+
+.retro-glow:hover::before {
+  opacity: 1;
 }
 
 @keyframes retro-glow {
   0%,
   100% {
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.4), 0 0 20px rgba(0, 255, 136, 0.2),
+      inset 0 0 15px rgba(0, 255, 136, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border-color: #00ff88;
   }
   50% {
-    box-shadow: 0 0 30px rgba(0, 255, 136, 0.6);
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.6), 0 0 30px rgba(0, 255, 136, 0.3),
+      0 0 40px rgba(0, 255, 136, 0.1), inset 0 0 20px rgba(0, 255, 136, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    border-color: #00ffaa;
+  }
+}
+
+@keyframes border-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.98;
+  }
+}
+
+@keyframes border-scan {
+  0% {
+    background-position: 200% 200%;
+  }
+  100% {
+    background-position: -200% -200%;
   }
 }
 

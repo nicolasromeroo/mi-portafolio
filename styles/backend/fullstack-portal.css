@@ -251,30 +251,119 @@
 /* Responsive */
 @media (max-width: 768px) {
   .fullstack-portal-btn {
-    padding: 10px 16px;
-    gap: 12px;
+    position: relative;
+    right: 0;
+    top: 0;
+    left: 30px;
+    margin: 20px 20px 0 0;
+    transform: none;
+    padding: 10px 15px;
+    gap: 10px;
+    background: linear-gradient(
+      135deg,
+      rgba(10, 14, 26, 0.95) 0%,
+      rgba(0, 255, 140, 0.1) 100%
+    );
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 255, 140, 0.3),
+      inset 0 0 20px rgba(0, 255, 140, 0.05);
+    font-family: "Courier New", monospace;
+  }
+
+  .fullstack-portal-btn::before {
+    display: none;
+  }
+
+  .fullstack-portal-btn::after {
+    content: "$ cd /fullstack";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    font-size: 10px;
+    color: var(--accent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    text-shadow: 0 0 10px rgba(0, 255, 140, 0.5);
+  }
+
+  .fullstack-portal-btn:hover::after {
+    opacity: 1;
+  }
+
+  .fullstack-portal-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 255, 140, 0.5),
+      inset 0 0 30px rgba(0, 255, 140, 0.1);
+    border-color: #00ffff;
   }
 
   .portal-ring {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--accent);
+    animation: portal-spin 3s linear infinite;
   }
 
   .portal-inner {
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 255, 255, 0.6);
   }
 
   .portal-core {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
+    background: radial-gradient(
+      circle,
+      var(--accent) 0%,
+      rgba(0, 255, 140, 0.3) 70%,
+      transparent 100%
+    );
+  }
+
+  .portal-core i {
+    font-size: 10px;
+    color: #0a0e1a;
+  }
+
+  .portal-text {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
   }
 
   .portal-label {
-    font-size: 12px;
+    font-size: 11px;
+    font-family: "Courier New", monospace;
+    font-weight: 600;
+  }
+
+  .portal-label::before {
+    content: ">";
+    margin-right: 4px;
+    animation: blink 1s infinite;
   }
 
   .portal-sublabel {
-    font-size: 9px;
+    display: none;
+  }
+
+  @keyframes blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+    51%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .portal-particles {
+    opacity: 0.5;
   }
 }

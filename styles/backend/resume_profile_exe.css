@@ -646,39 +646,7 @@
 
 @media (max-width: 640px) {
   .hero-terminal-frame {
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
-  }
-
-  .terminal-content {
-    padding: 16px;
-  }
-
-  .matrix-line {
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .key {
-    min-width: auto;
-    margin-bottom: 2px;
-  }
-
-  .skill-items {
-    justify-content: flex-start;
-  }
-
-  .code-block {
-    padding: 16px;
-    font-size: 0.8rem;
-  }
-
-  .nav-link {
-    padding: 10px 16px;
-  }
-
-  .status-items {
-    padding: 10px 16px;
+    display: none;
   }
 }
 
